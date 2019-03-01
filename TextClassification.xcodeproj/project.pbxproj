@@ -7,13 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB61FFA0222304E700E21B14 /* TextClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FF96222304E700E21B14 /* TextClassification.framework */; };
-		CB61FFA5222304E700E21B14 /* TextClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFA4222304E700E21B14 /* TextClassificationTests.swift */; };
 		CB61FFA7222304E700E21B14 /* TextClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = CB61FF99222304E700E21B14 /* TextClassification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB61FFB72223180200E21B14 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFB62223180200E21B14 /* Dataset.swift */; };
+		CB61FFB922232AE600E21B14 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FFB822232AE600E21B14 /* SQLite.framework */; };
+		CB61FFBD22232F8300E21B14 /* SQLiteDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFBC22232F8300E21B14 /* SQLiteDataset.swift */; };
+		CB61FFC42223313E00E21B14 /* TextClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFC32223313E00E21B14 /* TextClassifier.swift */; };
+		CB61FFC9222335B500E21B14 /* LanguageRecognizerClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFC8222335B500E21B14 /* LanguageRecognizerClassifier.swift */; };
+		CB61FFD4222525E200E21B14 /* CoreMLClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */; };
+		CBF4C84B2225EA9900CDF6F9 /* TextClassificationMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBF4C8582225EAB000CDF6F9 /* TextClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */; };
+		CBF4C8612225EB2400CDF6F9 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C8602225EB2400CDF6F9 /* SQLite.framework */; };
+		CBF4C8632225EBCC00CDF6F9 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFB62223180200E21B14 /* Dataset.swift */; };
+		CBF4C8642225EBCC00CDF6F9 /* SQLiteDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFBC22232F8300E21B14 /* SQLiteDataset.swift */; };
+		CBF4C8652225EBCC00CDF6F9 /* TextClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFC32223313E00E21B14 /* TextClassifier.swift */; };
+		CBF4C8662225EBCC00CDF6F9 /* LanguageRecognizerClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFC8222335B500E21B14 /* LanguageRecognizerClassifier.swift */; };
+		CBF4C8672225EBCC00CDF6F9 /* CoreMLClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */; };
+		CBF4C86A2225EC2000CDF6F9 /* Dataset+MLDataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8692225EC2000CDF6F9 /* Dataset+MLDataTable.swift */; };
+		CBF4C86F2225EC9500CDF6F9 /* CoreMLClassifier+CreateML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C86E2225EC9500CDF6F9 /* CoreMLClassifier+CreateML.swift */; };
+		CBF4C8762225F20B00CDF6F9 /* TestDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFCF2223390C00E21B14 /* TestDatasets.swift */; };
+		CBF4C8772225F20C00CDF6F9 /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFD122233A3200E21B14 /* TestResults.swift */; };
+		CBF4C8782225F20C00CDF6F9 /* TestBundleSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8402225E5F500CDF6F9 /* TestBundleSettings.swift */; };
+		CBF4C8792225F20C00CDF6F9 /* TextClassifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFCA222336AB00E21B14 /* TextClassifierExtensions.swift */; };
+		CBF4C87A2225F20C00CDF6F9 /* spamer.db in Resources */ = {isa = PBXBuildFile; fileRef = CB61FFBE22232FB200E21B14 /* spamer.db */; };
+		CBF4C87C2225F23200CDF6F9 /* BaseClassifierTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8722225F12300CDF6F9 /* BaseClassifierTestCase.swift */; };
+		CBF4C87F2226878800CDF6F9 /* RAMDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C87D2226877000CDF6F9 /* RAMDataset.swift */; };
+		CBF4C88222271CFC00CDF6F9 /* RAMDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C87D2226877000CDF6F9 /* RAMDataset.swift */; };
+		CBF4C88522271DDC00CDF6F9 /* NaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C88322271DCD00CDF6F9 /* NaiveBayesClassifier.swift */; };
+		CBF4C88622271DDD00CDF6F9 /* NaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C88322271DCD00CDF6F9 /* NaiveBayesClassifier.swift */; };
+		CBF4C88A22271F0900CDF6F9 /* Preprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C88722271ED200CDF6F9 /* Preprocessor.swift */; };
+		CBF4C88B22271F0A00CDF6F9 /* Preprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C88722271ED200CDF6F9 /* Preprocessor.swift */; };
+		CBF4C88E22271F8900CDF6F9 /* TrivialPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C88C22271F7A00CDF6F9 /* TrivialPreprocessor.swift */; };
+		CBF4C89022271FAD00CDF6F9 /* TrivialPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C88C22271F7A00CDF6F9 /* TrivialPreprocessor.swift */; };
+		CBF4C89422272F6700CDF6F9 /* SQLiteDatasetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFBA22232F7200E21B14 /* SQLiteDatasetTests.swift */; };
+		CBF4C89522272F6700CDF6F9 /* LanguageRecognizerClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFCD222338D900E21B14 /* LanguageRecognizerClassifierTests.swift */; };
+		CBF4C89622272F6700CDF6F9 /* CoreMLClassifier+CreateMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8702225EF0200CDF6F9 /* CoreMLClassifier+CreateMLTests.swift */; };
+		CBF4C89722272F6700CDF6F9 /* NaiveBayesClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C89122272CBD00CDF6F9 /* NaiveBayesClassifierTests.swift */; };
+		CBF4C89F22273ECA00CDF6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C89E22273ECA00CDF6F9 /* AppDelegate.swift */; };
+		CBF4C8A422273ECA00CDF6F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4C8A222273ECA00CDF6F9 /* Main.storyboard */; };
+		CBF4C8A622273ECC00CDF6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF4C8A522273ECC00CDF6F9 /* Assets.xcassets */; };
+		CBF4C8A922273ECC00CDF6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF4C8A722273ECC00CDF6F9 /* LaunchScreen.storyboard */; };
+		CBF4C8B522273EE600CDF6F9 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8B422273EE600CDF6F9 /* MessageFilterExtension.swift */; };
+		CBF4C8B922273EE600CDF6F9 /* MessageFilteringExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBF4C8B222273EE600CDF6F9 /* MessageFilteringExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBF4C8C922289E4200CDF6F9 /* ClassifiersComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8C822289E4200CDF6F9 /* ClassifiersComparisonViewController.swift */; };
+		CBF4C8CD22289E6F00CDF6F9 /* ClassifierComparisonTextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8CC22289E6F00CDF6F9 /* ClassifierComparisonTextInputCell.swift */; };
+		CBF4C8D322289F2400CDF6F9 /* ClassifierComparisonResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8D222289F2400CDF6F9 /* ClassifierComparisonResultCell.swift */; };
+		CBF4C8D72228A16E00CDF6F9 /* ClassificationComparisonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8D62228A16E00CDF6F9 /* ClassificationComparisonModel.swift */; };
+		CBF4C8DD2228A19800CDF6F9 /* TextClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FF96222304E700E21B14 /* TextClassification.framework */; };
+		CBF4C8E12228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8E02228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel */; };
+		CBF4C8E22228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8E02228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel */; };
+		CBF4C8E42228A84500CDF6F9 /* NaiveBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBF4C8E32228A84500CDF6F9 /* NaiveBayes.model */; };
+		CBF4C8E52228A84500CDF6F9 /* NaiveBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBF4C8E32228A84500CDF6F9 /* NaiveBayes.model */; };
+		CBF4C8E92229DDF200CDF6F9 /* TextClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FF96222304E700E21B14 /* TextClassification.framework */; };
+		CBF4C8EA2229DDF200CDF6F9 /* TextClassification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FF96222304E700E21B14 /* TextClassification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBF4C8EE2229DE1100CDF6F9 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FFB822232AE600E21B14 /* SQLite.framework */; };
+		CBF4C8EF2229DE1100CDF6F9 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FFB822232AE600E21B14 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBF4C8F52229E6DA00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
+		CBF4C8F62229E6DD00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CB61FFA1222304E700E21B14 /* PBXContainerItemProxy */ = {
+		CBF4C8592225EAB000CDF6F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF4C8462225EA9800CDF6F9;
+			remoteInfo = TextClassificationMacOS;
+		};
+		CBF4C8B722273EE600CDF6F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF4C8B122273EE600CDF6F9;
+			remoteInfo = MessageFilteringExtension;
+		};
+		CBF4C8EB2229DDF200CDF6F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
 			proxyType = 1;
@@ -22,13 +89,81 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CBF4C8BD22273EE600CDF6F9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBF4C8B922273EE600CDF6F9 /* MessageFilteringExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C8ED2229DDF300CDF6F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBF4C8EF2229DE1100CDF6F9 /* SQLite.framework in Embed Frameworks */,
+				CBF4C8EA2229DDF200CDF6F9 /* TextClassification.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CB61FF96222304E700E21B14 /* TextClassification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB61FF99222304E700E21B14 /* TextClassification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextClassification.h; sourceTree = "<group>"; };
 		CB61FF9A222304E700E21B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB61FF9F222304E700E21B14 /* TextClassificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextClassificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB61FFA4222304E700E21B14 /* TextClassificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassificationTests.swift; sourceTree = "<group>"; };
-		CB61FFA6222304E700E21B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB61FFB02223050600E21B14 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		CB61FFB62223180200E21B14 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		CB61FFB822232AE600E21B14 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		CB61FFBA22232F7200E21B14 /* SQLiteDatasetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatasetTests.swift; sourceTree = "<group>"; };
+		CB61FFBC22232F8300E21B14 /* SQLiteDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataset.swift; sourceTree = "<group>"; };
+		CB61FFBE22232FB200E21B14 /* spamer.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = spamer.db; sourceTree = "<group>"; };
+		CB61FFC32223313E00E21B14 /* TextClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassifier.swift; sourceTree = "<group>"; };
+		CB61FFC8222335B500E21B14 /* LanguageRecognizerClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageRecognizerClassifier.swift; sourceTree = "<group>"; };
+		CB61FFCA222336AB00E21B14 /* TextClassifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassifierExtensions.swift; sourceTree = "<group>"; };
+		CB61FFCD222338D900E21B14 /* LanguageRecognizerClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRecognizerClassifierTests.swift; sourceTree = "<group>"; };
+		CB61FFCF2223390C00E21B14 /* TestDatasets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatasets.swift; sourceTree = "<group>"; };
+		CB61FFD122233A3200E21B14 /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
+		CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLClassifier.swift; sourceTree = "<group>"; };
+		CBF4C8402225E5F500CDF6F9 /* TestBundleSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBundleSettings.swift; sourceTree = "<group>"; };
+		CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextClassificationMacOS.h; sourceTree = "<group>"; };
+		CBF4C84A2225EA9900CDF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF4C8532225EAB000CDF6F9 /* TextClassificationMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextClassificationMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF4C8572225EAB000CDF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF4C8602225EB2400CDF6F9 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
+		CBF4C8692225EC2000CDF6F9 /* Dataset+MLDataTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dataset+MLDataTable.swift"; sourceTree = "<group>"; };
+		CBF4C86E2225EC9500CDF6F9 /* CoreMLClassifier+CreateML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreMLClassifier+CreateML.swift"; sourceTree = "<group>"; };
+		CBF4C8702225EF0200CDF6F9 /* CoreMLClassifier+CreateMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreMLClassifier+CreateMLTests.swift"; sourceTree = "<group>"; };
+		CBF4C8722225F12300CDF6F9 /* BaseClassifierTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClassifierTestCase.swift; sourceTree = "<group>"; };
+		CBF4C87D2226877000CDF6F9 /* RAMDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMDataset.swift; sourceTree = "<group>"; };
+		CBF4C88322271DCD00CDF6F9 /* NaiveBayesClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaiveBayesClassifier.swift; sourceTree = "<group>"; };
+		CBF4C88722271ED200CDF6F9 /* Preprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preprocessor.swift; sourceTree = "<group>"; };
+		CBF4C88C22271F7A00CDF6F9 /* TrivialPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialPreprocessor.swift; sourceTree = "<group>"; };
+		CBF4C89122272CBD00CDF6F9 /* NaiveBayesClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaiveBayesClassifierTests.swift; sourceTree = "<group>"; };
+		CBF4C89C22273ECA00CDF6F9 /* MessageFilteringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageFilteringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF4C89E22273ECA00CDF6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBF4C8A322273ECA00CDF6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBF4C8A522273ECC00CDF6F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF4C8A822273ECC00CDF6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBF4C8AA22273ECC00CDF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF4C8B222273EE600CDF6F9 /* MessageFilteringExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageFilteringExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF4C8B422273EE600CDF6F9 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		CBF4C8B622273EE600CDF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF4C8C822289E4200CDF6F9 /* ClassifiersComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiersComparisonViewController.swift; sourceTree = "<group>"; };
+		CBF4C8CC22289E6F00CDF6F9 /* ClassifierComparisonTextInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierComparisonTextInputCell.swift; sourceTree = "<group>"; };
+		CBF4C8D222289F2400CDF6F9 /* ClassifierComparisonResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierComparisonResultCell.swift; sourceTree = "<group>"; };
+		CBF4C8D62228A16E00CDF6F9 /* ClassificationComparisonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationComparisonModel.swift; sourceTree = "<group>"; };
+		CBF4C8E02228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CoreMLLanguageClassifier.mlmodel; sourceTree = "<group>"; };
+		CBF4C8E32228A84500CDF6F9 /* NaiveBayes.model */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NaiveBayes.model; sourceTree = "<group>"; };
+		CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMappedNaiveBayesClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,14 +171,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB61FFB922232AE600E21B14 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB61FF9C222304E700E21B14 /* Frameworks */ = {
+		CBF4C8442225EA9800CDF6F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB61FFA0222304E700E21B14 /* TextClassification.framework in Frameworks */,
+				CBF4C8612225EB2400CDF6F9 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C8502225EAB000CDF6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8582225EAB000CDF6F9 /* TextClassification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C89922273ECA00CDF6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8EE2229DE1100CDF6F9 /* SQLite.framework in Frameworks */,
+				CBF4C8E92229DDF200CDF6F9 /* TextClassification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C8AF22273EE600CDF6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8DD2228A19800CDF6F9 /* TextClassification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +214,15 @@
 		CB61FF8C222304E700E21B14 = {
 			isa = PBXGroup;
 			children = (
+				CB61FFB02223050600E21B14 /* Cartfile */,
+				CBF4C86B2225EC5000CDF6F9 /* Common */,
 				CB61FF98222304E700E21B14 /* TextClassification */,
-				CB61FFA3222304E700E21B14 /* TextClassificationTests */,
+				CBF4C8482225EA9900CDF6F9 /* TextClassificationMacOS */,
+				CBF4C8542225EAB000CDF6F9 /* TextClassificationMacOSTests */,
+				CBF4C8DF2228A2ED00CDF6F9 /* TestOutput */,
+				CBF4C89D22273ECA00CDF6F9 /* MessageFilteringApp */,
+				CBF4C8B322273EE600CDF6F9 /* MessageFilteringExtension */,
+				CB61FFB42223161F00E21B14 /* Frameworks */,
 				CB61FF97222304E700E21B14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +231,10 @@
 			isa = PBXGroup;
 			children = (
 				CB61FF96222304E700E21B14 /* TextClassification.framework */,
-				CB61FF9F222304E700E21B14 /* TextClassificationTests.xctest */,
+				CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */,
+				CBF4C8532225EAB000CDF6F9 /* TextClassificationMacOSTests.xctest */,
+				CBF4C89C22273ECA00CDF6F9 /* MessageFilteringApp.app */,
+				CBF4C8B222273EE600CDF6F9 /* MessageFilteringExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,13 +248,181 @@
 			path = TextClassification;
 			sourceTree = "<group>";
 		};
-		CB61FFA3222304E700E21B14 /* TextClassificationTests */ = {
+		CB61FFB42223161F00E21B14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB61FFA4222304E700E21B14 /* TextClassificationTests.swift */,
-				CB61FFA6222304E700E21B14 /* Info.plist */,
+				CBF4C85F2225EABC00CDF6F9 /* iOS */,
+				CBF4C85E2225EAB900CDF6F9 /* macOS */,
 			);
-			path = TextClassificationTests;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB61FFC022232FBD00E21B14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFBE22232FB200E21B14 /* spamer.db */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB61FFC122232FC800E21B14 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8722225F12300CDF6F9 /* BaseClassifierTestCase.swift */,
+				CB61FFBA22232F7200E21B14 /* SQLiteDatasetTests.swift */,
+				CB61FFCD222338D900E21B14 /* LanguageRecognizerClassifierTests.swift */,
+				CBF4C8702225EF0200CDF6F9 /* CoreMLClassifier+CreateMLTests.swift */,
+				CBF4C89122272CBD00CDF6F9 /* NaiveBayesClassifierTests.swift */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		CB61FFC22223313200E21B14 /* Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFB62223180200E21B14 /* Dataset.swift */,
+				CBF4C87D2226877000CDF6F9 /* RAMDataset.swift */,
+				CB61FFBC22232F8300E21B14 /* SQLiteDataset.swift */,
+			);
+			path = Dataset;
+			sourceTree = "<group>";
+		};
+		CB61FFC52223314400E21B14 /* TextClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFC32223313E00E21B14 /* TextClassifier.swift */,
+				CB61FFC8222335B500E21B14 /* LanguageRecognizerClassifier.swift */,
+				CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */,
+				CBF4C88322271DCD00CDF6F9 /* NaiveBayesClassifier.swift */,
+				CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */,
+			);
+			path = TextClassifier;
+			sourceTree = "<group>";
+		};
+		CBF4C8482225EA9900CDF6F9 /* TextClassificationMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C86C2225EC6200CDF6F9 /* Dataset */,
+				CBF4C86D2225EC6C00CDF6F9 /* TextClassifier */,
+				CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */,
+				CBF4C84A2225EA9900CDF6F9 /* Info.plist */,
+			);
+			path = TextClassificationMacOS;
+			sourceTree = "<group>";
+		};
+		CBF4C8542225EAB000CDF6F9 /* TextClassificationMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8752225F1F300CDF6F9 /* Tools */,
+				CB61FFC022232FBD00E21B14 /* Resources */,
+				CB61FFC122232FC800E21B14 /* TestCases */,
+				CBF4C8572225EAB000CDF6F9 /* Info.plist */,
+			);
+			path = TextClassificationMacOSTests;
+			sourceTree = "<group>";
+		};
+		CBF4C85E2225EAB900CDF6F9 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8602225EB2400CDF6F9 /* SQLite.framework */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		CBF4C85F2225EABC00CDF6F9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFB822232AE600E21B14 /* SQLite.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CBF4C86B2225EC5000CDF6F9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFC22223313200E21B14 /* Dataset */,
+				CBF4C88922271ED600CDF6F9 /* Preprocessor */,
+				CB61FFC52223314400E21B14 /* TextClassifier */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CBF4C86C2225EC6200CDF6F9 /* Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8692225EC2000CDF6F9 /* Dataset+MLDataTable.swift */,
+			);
+			path = Dataset;
+			sourceTree = "<group>";
+		};
+		CBF4C86D2225EC6C00CDF6F9 /* TextClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C86E2225EC9500CDF6F9 /* CoreMLClassifier+CreateML.swift */,
+			);
+			path = TextClassifier;
+			sourceTree = "<group>";
+		};
+		CBF4C8752225F1F300CDF6F9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFCF2223390C00E21B14 /* TestDatasets.swift */,
+				CB61FFD122233A3200E21B14 /* TestResults.swift */,
+				CBF4C8402225E5F500CDF6F9 /* TestBundleSettings.swift */,
+				CB61FFCA222336AB00E21B14 /* TextClassifierExtensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CBF4C88922271ED600CDF6F9 /* Preprocessor */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C88722271ED200CDF6F9 /* Preprocessor.swift */,
+				CBF4C88C22271F7A00CDF6F9 /* TrivialPreprocessor.swift */,
+			);
+			path = Preprocessor;
+			sourceTree = "<group>";
+		};
+		CBF4C89D22273ECA00CDF6F9 /* MessageFilteringApp */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8CB22289E5300CDF6F9 /* ClassifiersComparison */,
+				CBF4C89E22273ECA00CDF6F9 /* AppDelegate.swift */,
+				CBF4C8A222273ECA00CDF6F9 /* Main.storyboard */,
+				CBF4C8A522273ECC00CDF6F9 /* Assets.xcassets */,
+				CBF4C8A722273ECC00CDF6F9 /* LaunchScreen.storyboard */,
+				CBF4C8AA22273ECC00CDF6F9 /* Info.plist */,
+			);
+			path = MessageFilteringApp;
+			sourceTree = "<group>";
+		};
+		CBF4C8B322273EE600CDF6F9 /* MessageFilteringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8B422273EE600CDF6F9 /* MessageFilterExtension.swift */,
+				CBF4C8B622273EE600CDF6F9 /* Info.plist */,
+			);
+			path = MessageFilteringExtension;
+			sourceTree = "<group>";
+		};
+		CBF4C8CB22289E5300CDF6F9 /* ClassifiersComparison */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8D62228A16E00CDF6F9 /* ClassificationComparisonModel.swift */,
+				CBF4C8C822289E4200CDF6F9 /* ClassifiersComparisonViewController.swift */,
+				CBF4C8CC22289E6F00CDF6F9 /* ClassifierComparisonTextInputCell.swift */,
+				CBF4C8D222289F2400CDF6F9 /* ClassifierComparisonResultCell.swift */,
+			);
+			path = ClassifiersComparison;
+			sourceTree = "<group>";
+		};
+		CBF4C8DF2228A2ED00CDF6F9 /* TestOutput */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4C8E02228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel */,
+				CBF4C8E32228A84500CDF6F9 /* NaiveBayes.model */,
+			);
+			path = TestOutput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB61FFA7222304E700E21B14 /* TextClassification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C8422225EA9800CDF6F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C84B2225EA9900CDF6F9 /* TextClassificationMacOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +455,7 @@
 				CB61FF92222304E700E21B14 /* Sources */,
 				CB61FF93222304E700E21B14 /* Frameworks */,
 				CB61FF94222304E700E21B14 /* Resources */,
+				CB61FFB52223164800E21B14 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,23 +466,80 @@
 			productReference = CB61FF96222304E700E21B14 /* TextClassification.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CB61FF9E222304E700E21B14 /* TextClassificationTests */ = {
+		CBF4C8462225EA9800CDF6F9 /* TextClassificationMacOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB61FFAD222304E700E21B14 /* Build configuration list for PBXNativeTarget "TextClassificationTests" */;
+			buildConfigurationList = CBF4C84C2225EA9900CDF6F9 /* Build configuration list for PBXNativeTarget "TextClassificationMacOS" */;
 			buildPhases = (
-				CB61FF9B222304E700E21B14 /* Sources */,
-				CB61FF9C222304E700E21B14 /* Frameworks */,
-				CB61FF9D222304E700E21B14 /* Resources */,
+				CBF4C8422225EA9800CDF6F9 /* Headers */,
+				CBF4C8432225EA9800CDF6F9 /* Sources */,
+				CBF4C8442225EA9800CDF6F9 /* Frameworks */,
+				CBF4C8452225EA9800CDF6F9 /* Resources */,
+				CBF4C8622225EB3B00CDF6F9 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB61FFA2222304E700E21B14 /* PBXTargetDependency */,
 			);
-			name = TextClassificationTests;
-			productName = TextClassificationTests;
-			productReference = CB61FF9F222304E700E21B14 /* TextClassificationTests.xctest */;
+			name = TextClassificationMacOS;
+			productName = TextClassificationMacOS;
+			productReference = CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBF4C8522225EAB000CDF6F9 /* TextClassificationMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF4C85B2225EAB000CDF6F9 /* Build configuration list for PBXNativeTarget "TextClassificationMacOSTests" */;
+			buildPhases = (
+				CBF4C84F2225EAB000CDF6F9 /* Sources */,
+				CBF4C8502225EAB000CDF6F9 /* Frameworks */,
+				CBF4C8512225EAB000CDF6F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF4C85A2225EAB000CDF6F9 /* PBXTargetDependency */,
+			);
+			name = TextClassificationMacOSTests;
+			productName = TextClassificationMacOSTests;
+			productReference = CBF4C8532225EAB000CDF6F9 /* TextClassificationMacOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBF4C89B22273ECA00CDF6F9 /* MessageFilteringApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF4C8AB22273ECC00CDF6F9 /* Build configuration list for PBXNativeTarget "MessageFilteringApp" */;
+			buildPhases = (
+				CBF4C89822273ECA00CDF6F9 /* Sources */,
+				CBF4C89922273ECA00CDF6F9 /* Frameworks */,
+				CBF4C89A22273ECA00CDF6F9 /* Resources */,
+				CBF4C8BD22273EE600CDF6F9 /* Embed App Extensions */,
+				CBF4C8ED2229DDF300CDF6F9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF4C8B822273EE600CDF6F9 /* PBXTargetDependency */,
+				CBF4C8EC2229DDF200CDF6F9 /* PBXTargetDependency */,
+			);
+			name = MessageFilteringApp;
+			productName = MessageFilteringApp;
+			productReference = CBF4C89C22273ECA00CDF6F9 /* MessageFilteringApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBF4C8B122273EE600CDF6F9 /* MessageFilteringExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF4C8BA22273EE600CDF6F9 /* Build configuration list for PBXNativeTarget "MessageFilteringExtension" */;
+			buildPhases = (
+				CBF4C8AE22273EE600CDF6F9 /* Sources */,
+				CBF4C8AF22273EE600CDF6F9 /* Frameworks */,
+				CBF4C8B022273EE600CDF6F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageFilteringExtension;
+			productName = MessageFilteringExtension;
+			productReference = CBF4C8B222273EE600CDF6F9 /* MessageFilteringExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,8 +553,18 @@
 				TargetAttributes = {
 					CB61FF95222304E700E21B14 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
-					CB61FF9E222304E700E21B14 = {
+					CBF4C8462225EA9800CDF6F9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CBF4C8522225EAB000CDF6F9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CBF4C89B22273ECA00CDF6F9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CBF4C8B122273EE600CDF6F9 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -160,6 +575,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CB61FF8C222304E700E21B14;
 			productRefGroup = CB61FF97222304E700E21B14 /* Products */;
@@ -167,7 +583,10 @@
 			projectRoot = "";
 			targets = (
 				CB61FF95222304E700E21B14 /* TextClassification */,
-				CB61FF9E222304E700E21B14 /* TextClassificationTests */,
+				CBF4C8462225EA9800CDF6F9 /* TextClassificationMacOS */,
+				CBF4C8522225EAB000CDF6F9 /* TextClassificationMacOSTests */,
+				CBF4C89B22273ECA00CDF6F9 /* MessageFilteringApp */,
+				CBF4C8B122273EE600CDF6F9 /* MessageFilteringExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -180,40 +599,198 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB61FF9D222304E700E21B14 /* Resources */ = {
+		CBF4C8452225EA9800CDF6F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF4C8512225EAB000CDF6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C87A2225F20C00CDF6F9 /* spamer.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C89A22273ECA00CDF6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8A922273ECC00CDF6F9 /* LaunchScreen.storyboard in Resources */,
+				CBF4C8A622273ECC00CDF6F9 /* Assets.xcassets in Resources */,
+				CBF4C8E42228A84500CDF6F9 /* NaiveBayes.model in Resources */,
+				CBF4C8A422273ECA00CDF6F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C8B022273EE600CDF6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8E52228A84500CDF6F9 /* NaiveBayes.model in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB61FFB52223164800E21B14 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		CBF4C8622225EB3B00CDF6F9 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/SQLite.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB61FF92222304E700E21B14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB61FFBD22232F8300E21B14 /* SQLiteDataset.swift in Sources */,
+				CBF4C88222271CFC00CDF6F9 /* RAMDataset.swift in Sources */,
+				CB61FFD4222525E200E21B14 /* CoreMLClassifier.swift in Sources */,
+				CB61FFB72223180200E21B14 /* Dataset.swift in Sources */,
+				CBF4C89022271FAD00CDF6F9 /* TrivialPreprocessor.swift in Sources */,
+				CBF4C88B22271F0A00CDF6F9 /* Preprocessor.swift in Sources */,
+				CB61FFC9222335B500E21B14 /* LanguageRecognizerClassifier.swift in Sources */,
+				CBF4C8F52229E6DA00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */,
+				CB61FFC42223313E00E21B14 /* TextClassifier.swift in Sources */,
+				CBF4C88622271DDD00CDF6F9 /* NaiveBayesClassifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB61FF9B222304E700E21B14 /* Sources */ = {
+		CBF4C8432225EA9800CDF6F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB61FFA5222304E700E21B14 /* TextClassificationTests.swift in Sources */,
+				CBF4C88522271DDC00CDF6F9 /* NaiveBayesClassifier.swift in Sources */,
+				CBF4C88E22271F8900CDF6F9 /* TrivialPreprocessor.swift in Sources */,
+				CBF4C86F2225EC9500CDF6F9 /* CoreMLClassifier+CreateML.swift in Sources */,
+				CBF4C88A22271F0900CDF6F9 /* Preprocessor.swift in Sources */,
+				CBF4C87F2226878800CDF6F9 /* RAMDataset.swift in Sources */,
+				CBF4C8642225EBCC00CDF6F9 /* SQLiteDataset.swift in Sources */,
+				CBF4C8672225EBCC00CDF6F9 /* CoreMLClassifier.swift in Sources */,
+				CBF4C86A2225EC2000CDF6F9 /* Dataset+MLDataTable.swift in Sources */,
+				CBF4C8632225EBCC00CDF6F9 /* Dataset.swift in Sources */,
+				CBF4C8F62229E6DD00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */,
+				CBF4C8662225EBCC00CDF6F9 /* LanguageRecognizerClassifier.swift in Sources */,
+				CBF4C8652225EBCC00CDF6F9 /* TextClassifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C84F2225EAB000CDF6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8792225F20C00CDF6F9 /* TextClassifierExtensions.swift in Sources */,
+				CBF4C89622272F6700CDF6F9 /* CoreMLClassifier+CreateMLTests.swift in Sources */,
+				CBF4C8772225F20C00CDF6F9 /* TestResults.swift in Sources */,
+				CBF4C89422272F6700CDF6F9 /* SQLiteDatasetTests.swift in Sources */,
+				CBF4C8762225F20B00CDF6F9 /* TestDatasets.swift in Sources */,
+				CBF4C89522272F6700CDF6F9 /* LanguageRecognizerClassifierTests.swift in Sources */,
+				CBF4C87C2225F23200CDF6F9 /* BaseClassifierTestCase.swift in Sources */,
+				CBF4C89722272F6700CDF6F9 /* NaiveBayesClassifierTests.swift in Sources */,
+				CBF4C8782225F20C00CDF6F9 /* TestBundleSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C89822273ECA00CDF6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8C922289E4200CDF6F9 /* ClassifiersComparisonViewController.swift in Sources */,
+				CBF4C8CD22289E6F00CDF6F9 /* ClassifierComparisonTextInputCell.swift in Sources */,
+				CBF4C8D72228A16E00CDF6F9 /* ClassificationComparisonModel.swift in Sources */,
+				CBF4C8D322289F2400CDF6F9 /* ClassifierComparisonResultCell.swift in Sources */,
+				CBF4C89F22273ECA00CDF6F9 /* AppDelegate.swift in Sources */,
+				CBF4C8E12228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF4C8AE22273EE600CDF6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4C8B522273EE600CDF6F9 /* MessageFilterExtension.swift in Sources */,
+				CBF4C8E22228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CB61FFA2222304E700E21B14 /* PBXTargetDependency */ = {
+		CBF4C85A2225EAB000CDF6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF4C8462225EA9800CDF6F9 /* TextClassificationMacOS */;
+			targetProxy = CBF4C8592225EAB000CDF6F9 /* PBXContainerItemProxy */;
+		};
+		CBF4C8B822273EE600CDF6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF4C8B122273EE600CDF6F9 /* MessageFilteringExtension */;
+			targetProxy = CBF4C8B722273EE600CDF6F9 /* PBXContainerItemProxy */;
+		};
+		CBF4C8EC2229DDF200CDF6F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB61FF95222304E700E21B14 /* TextClassification */;
-			targetProxy = CB61FFA1222304E700E21B14 /* PBXContainerItemProxy */;
+			targetProxy = CBF4C8EB2229DDF200CDF6F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBF4C8A222273ECA00CDF6F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF4C8A322273ECA00CDF6F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBF4C8A722273ECC00CDF6F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF4C8A822273ECC00CDF6F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB61FFA8222304E700E21B14 /* Debug */ = {
@@ -341,12 +918,19 @@
 		CB61FFAB222304E700E21B14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EWA2VG7634;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TextClassification/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,6 +941,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassification;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,12 +950,19 @@
 		CB61FFAC222304E700E21B14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EWA2VG7634;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TextClassification/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,35 +978,189 @@
 			};
 			name = Release;
 		};
-		CB61FFAE222304E700E21B14 /* Debug */ = {
+		CBF4C84D2225EA9900CDF6F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TextClassificationTests/Info.plist;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TextClassificationMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationMacOS;
+				PRODUCT_NAME = TextClassification;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		CBF4C84E2225EA9900CDF6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TextClassificationMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationMacOS;
+				PRODUCT_NAME = TextClassification;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		CBF4C85C2225EAB000CDF6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextClassificationMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		CBF4C85D2225EAB000CDF6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextClassificationMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		CBF4C8AC22273ECC00CDF6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MessageFilteringApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CB61FFAF222304E700E21B14 /* Release */ = {
+		CBF4C8AD22273ECC00CDF6F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TextClassificationTests/Info.plist;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MessageFilteringApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBF4C8BB22273EE600CDF6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				INFOPLIST_FILE = MessageFilteringExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test.extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBF4C8BC22273EE600CDF6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				INFOPLIST_FILE = MessageFilteringExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test.extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,11 +1187,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB61FFAD222304E700E21B14 /* Build configuration list for PBXNativeTarget "TextClassificationTests" */ = {
+		CBF4C84C2225EA9900CDF6F9 /* Build configuration list for PBXNativeTarget "TextClassificationMacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB61FFAE222304E700E21B14 /* Debug */,
-				CB61FFAF222304E700E21B14 /* Release */,
+				CBF4C84D2225EA9900CDF6F9 /* Debug */,
+				CBF4C84E2225EA9900CDF6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF4C85B2225EAB000CDF6F9 /* Build configuration list for PBXNativeTarget "TextClassificationMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF4C85C2225EAB000CDF6F9 /* Debug */,
+				CBF4C85D2225EAB000CDF6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF4C8AB22273ECC00CDF6F9 /* Build configuration list for PBXNativeTarget "MessageFilteringApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF4C8AC22273ECC00CDF6F9 /* Debug */,
+				CBF4C8AD22273ECC00CDF6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF4C8BA22273EE600CDF6F9 /* Build configuration list for PBXNativeTarget "MessageFilteringExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF4C8BB22273EE600CDF6F9 /* Debug */,
+				CBF4C8BC22273EE600CDF6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
