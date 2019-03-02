@@ -1,5 +1,5 @@
 //
-//  NaiveBayesClassifierTests.swift
+//  MemoryMappedNaiveBayesClassifierTests.swift
 //  TextClassificationTests
 //
 //  Created by Viacheslav Volodko on 2/27/19.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import TextClassification
 
-class NaiveBayesClassifierTests: BaseClassifierTestCase {
+class MemoryMappedNaiveBayesClassifierTests: BaseClassifierTestCase {
 
     override func setUp() {
         super.setUp()
@@ -24,8 +24,8 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
         let testDataset = self.testDatasets.testDataset
 
         // WHEN
-        let classifier = NaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! NaiveBayesClassifier
-        try? classifier.store(toFile: bundleSettings.outputURL.appendingPathComponent("NaiveBayes.model"))
+        let classifier = MemoryMappedNaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! MemoryMappedNaiveBayesClassifier
+        try? classifier.store(toDirectory: bundleSettings.outputURL.appendingPathComponent("MemoryMappedBayes.model"))
 
         // THEN
         let ukrPrediction = classifier.predictedLabel(for: "Вас вітає Славік!")
@@ -52,7 +52,7 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
         let (trainDataset, testDataset) = self.testDatasets.testDataset.splitTestDataset(startPersentage: 0.8,
                                                                                          endPersentage: 1.0)
 
-        let classifier = NaiveBayesClassifier.train(with: TrivialPreprocessor(), on: trainDataset)
+        let classifier = MemoryMappedNaiveBayesClassifier.train(with: TrivialPreprocessor(), on: trainDataset)
 
         // WHEN
         let testResults = classifier.test(on: testDataset)
@@ -66,16 +66,17 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
         let dataset = self.testDatasets.testDataset
 
         // WHEN
-        let results = NaiveBayesClassifier.crossValidate(on: dataset, with: TrivialPreprocessor())
+        let results = MemoryMappedNaiveBayesClassifier.crossValidate(on: dataset, with: TrivialPreprocessor())
 
         // THEN
         XCTAssertGreaterThan(results.accuracy, 1.0)
     }
 
+
     func testAllLabels() {
         // GIVEN
         let testDataset = self.testDatasets.testDataset
-        let classifier = NaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! NaiveBayesClassifier
+        let classifier = MemoryMappedNaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! MemoryMappedNaiveBayesClassifier
 
         // WHEN
         let allLabels = classifier.allLabels()
@@ -87,7 +88,7 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
     func testNumberOfFeatures() {
         // GIVEN
         let testDataset = self.testDatasets.testDataset
-        let classifier = NaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! NaiveBayesClassifier
+        let classifier = MemoryMappedNaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! MemoryMappedNaiveBayesClassifier
 
         // WHEN
         let numberOfFeatures = classifier.allLabels().reduce(into: [String: Int]()) { result, label in
@@ -106,10 +107,10 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
     func testNumberOfFeatureInLabelIndex() {
         // GIVEN
         let testDataset = self.testDatasets.testDataset
-        let classifier = NaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! NaiveBayesClassifier
+        let classifier = MemoryMappedNaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! MemoryMappedNaiveBayesClassifier
 
         // WHEN
-        let numberOfFeatures = classifier.allLabels().reduce(into: [String: Int]()) { result, label in
+        let numberOfFeatures = classifier.allLabels().reduce(into: [String: Int64]()) { result, label in
             result[label] = classifier.featureCountInIndex(feature: "вітає", label: label)
         }
 
@@ -126,7 +127,7 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
         // GIVEN
         let testDataset = self.testDatasets.testDataset
         let preprocessor = TrivialPreprocessor()
-        let classifier = NaiveBayesClassifier.train(with: preprocessor, on: testDataset) as! NaiveBayesClassifier
+        let classifier = MemoryMappedNaiveBayesClassifier.train(with: preprocessor, on: testDataset) as! MemoryMappedNaiveBayesClassifier
         let features = preprocessor.preprocess(text: "Вас вітає Славік!")
 
         // WHEN

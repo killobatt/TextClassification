@@ -1,0 +1,19 @@
+// Flatbuffers schema
+// Compile this file with
+// > flatc --cpp schema.fbs
+// For more info look at Flatbuffers docs: https://google.github.io/flatbuffers/flatbuffers_guide_tutorial.html
+//
+
+namespace flatcollections;
+
+// Dictionary [String: Int]
+table StringIntDictionary {
+    entries:[StringIntDictionaryEntry];
+}
+
+table StringIntDictionaryEntry {
+    key:string (key);
+    value:int64;
+}
+
+root_type StringIntDictionary;

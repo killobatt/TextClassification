@@ -20,7 +20,7 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
     
     private func action(for queryRequest: ILMessageFilterQueryRequest) -> ILMessageFilterAction {
         guard let messageText = queryRequest.messageBody,
-            let classifier = loadNaiveBayesClassifier(),
+            let classifier = loadMemoryMappedNaiveBayesClassifier(),
             let label = classifier.predictedLabel(for: messageText) else {
                 return .none
         }
@@ -50,10 +50,17 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
     }
 
     private func loadNaiveBayesClassifier() -> NaiveBayesClassifier? {
-        guard let url = Bundle.main.url(forResource: "NaiveBayes", withExtension: "model") else {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "NaiveBayes", withExtension: "model") else {
             return nil
         }
         return try? NaiveBayesClassifier(fileURL: url, preprocessor: TrivialPreprocessor())
+    }
+
+    private func loadMemoryMappedNaiveBayesClassifier() -> MemoryMappedNaiveBayesClassifier? {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "MemoryMappedBayes", withExtension: "model") else {
+            return nil
+        }
+        return try? MemoryMappedNaiveBayesClassifier(fileURL: url, preprocessor: TrivialPreprocessor())
     }
 }
 

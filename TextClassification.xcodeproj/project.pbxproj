@@ -14,6 +14,40 @@
 		CB61FFC42223313E00E21B14 /* TextClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFC32223313E00E21B14 /* TextClassifier.swift */; };
 		CB61FFC9222335B500E21B14 /* LanguageRecognizerClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFC8222335B500E21B14 /* LanguageRecognizerClassifier.swift */; };
 		CB61FFD4222525E200E21B14 /* CoreMLClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */; };
+		CBDFC9D62229F15E00C5E282 /* MemoryMappedCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFC9C62229F15E00C5E282 /* MemoryMappedCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDFC9D92229F15E00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
+		CBDFC9DA2229F15E00C5E282 /* MemoryMappedCollections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBDFC9E6222A79DB00C5E282 /* schema.fbs in Resources */ = {isa = PBXBuildFile; fileRef = CBDFC9E5222A79DB00C5E282 /* schema.fbs */; };
+		CBDFC9E8222A7D1900C5E282 /* schema_generated.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFC9E7222A7D1900C5E282 /* schema_generated.h */; };
+		CBDFC9EB222A7D8B00C5E282 /* MMStringIntDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFC9E9222A7D8B00C5E282 /* MMStringIntDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDFC9EC222A7D8B00C5E282 /* MMStringIntDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBDFC9EA222A7D8B00C5E282 /* MMStringIntDictionary.mm */; };
+		CBDFCA1B222A803000C5E282 /* grpc.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA0D222A803000C5E282 /* grpc.h */; };
+		CBDFCA1C222A803000C5E282 /* idl.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA0E222A803000C5E282 /* idl.h */; };
+		CBDFCA1D222A803000C5E282 /* reflection_generated.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA0F222A803000C5E282 /* reflection_generated.h */; };
+		CBDFCA1E222A803000C5E282 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA10222A803000C5E282 /* registry.h */; };
+		CBDFCA1F222A803000C5E282 /* flatbuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA11222A803000C5E282 /* flatbuffers.h */; };
+		CBDFCA20222A803000C5E282 /* flatc.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA12222A803000C5E282 /* flatc.h */; };
+		CBDFCA21222A803000C5E282 /* flexbuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA13222A803000C5E282 /* flexbuffers.h */; };
+		CBDFCA22222A803000C5E282 /* minireflect.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA14222A803000C5E282 /* minireflect.h */; };
+		CBDFCA23222A803000C5E282 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA15222A803000C5E282 /* util.h */; };
+		CBDFCA24222A803000C5E282 /* code_generators.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA16222A803000C5E282 /* code_generators.h */; };
+		CBDFCA25222A803000C5E282 /* stl_emulation.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA17222A803000C5E282 /* stl_emulation.h */; };
+		CBDFCA26222A803000C5E282 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA18222A803000C5E282 /* hash.h */; };
+		CBDFCA27222A803000C5E282 /* reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA19222A803000C5E282 /* reflection.h */; };
+		CBDFCA28222A803000C5E282 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA1A222A803000C5E282 /* base.h */; };
+		CBDFCA2B222A8C2800C5E282 /* NSString+CPP.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA29222A8C2800C5E282 /* NSString+CPP.h */; };
+		CBDFCA2C222A8C2800C5E282 /* NSString+CPP.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA2A222A8C2800C5E282 /* NSString+CPP.m */; };
+		CBDFCA2F222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDFCA30222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */; };
+		CBDFCA3A222A937700C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
+		CBDFCA43222A938F00C5E282 /* MMStringIntDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA41222A938F00C5E282 /* MMStringIntDictionaryTests.swift */; };
+		CBDFCA48222A98BB00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
+		CBDFCA4C222A99B200C5E282 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
+		CBDFCA4D222AA11300C5E282 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA42222A938F00C5E282 /* Info.plist */; };
+		CBDFCA4F222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */; };
+		CBDFCA50222AA30E00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
+		CBDFCA53222AA64200C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
+		CBDFCA54222AA64300C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
 		CBF4C84B2225EA9900CDF6F9 /* TextClassificationMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBF4C8582225EAB000CDF6F9 /* TextClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */; };
 		CBF4C8612225EB2400CDF6F9 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C8602225EB2400CDF6F9 /* SQLite.framework */; };
@@ -62,10 +96,37 @@
 		CBF4C8EE2229DE1100CDF6F9 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FFB822232AE600E21B14 /* SQLite.framework */; };
 		CBF4C8EF2229DE1100CDF6F9 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FFB822232AE600E21B14 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBF4C8F52229E6DA00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
-		CBF4C8F62229E6DD00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CBDFC9D72229F15E00C5E282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDFC9C32229F15D00C5E282;
+			remoteInfo = MemoryMappedCollections;
+		};
+		CBDFCA3B222A937700C5E282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDFC9C32229F15D00C5E282;
+			remoteInfo = MemoryMappedCollections;
+		};
+		CBDFCA46222A98B500C5E282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDFC9C32229F15D00C5E282;
+			remoteInfo = MemoryMappedCollections;
+		};
+		CBDFCA49222A98C100C5E282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDFC9C32229F15D00C5E282;
+			remoteInfo = MemoryMappedCollections;
+		};
 		CBF4C8592225EAB000CDF6F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
@@ -107,6 +168,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CBDFC9DA2229F15E00C5E282 /* MemoryMappedCollections.framework in Embed Frameworks */,
 				CBF4C8EF2229DE1100CDF6F9 /* SQLite.framework in Embed Frameworks */,
 				CBF4C8EA2229DDF200CDF6F9 /* TextClassification.framework in Embed Frameworks */,
 			);
@@ -132,6 +194,36 @@
 		CB61FFCF2223390C00E21B14 /* TestDatasets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatasets.swift; sourceTree = "<group>"; };
 		CB61FFD122233A3200E21B14 /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
 		CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLClassifier.swift; sourceTree = "<group>"; };
+		CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryMappedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDFC9C62229F15E00C5E282 /* MemoryMappedCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMappedCollections.h; sourceTree = "<group>"; };
+		CBDFC9C72229F15E00C5E282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDFC9E5222A79DB00C5E282 /* schema.fbs */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.fbs; sourceTree = "<group>"; };
+		CBDFC9E7222A7D1900C5E282 /* schema_generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = schema_generated.h; sourceTree = "<group>"; };
+		CBDFC9E9222A7D8B00C5E282 /* MMStringIntDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMStringIntDictionary.h; sourceTree = "<group>"; };
+		CBDFC9EA222A7D8B00C5E282 /* MMStringIntDictionary.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStringIntDictionary.mm; sourceTree = "<group>"; };
+		CBDFCA0D222A803000C5E282 /* grpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grpc.h; sourceTree = "<group>"; };
+		CBDFCA0E222A803000C5E282 /* idl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idl.h; sourceTree = "<group>"; };
+		CBDFCA0F222A803000C5E282 /* reflection_generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reflection_generated.h; sourceTree = "<group>"; };
+		CBDFCA10222A803000C5E282 /* registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registry.h; sourceTree = "<group>"; };
+		CBDFCA11222A803000C5E282 /* flatbuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flatbuffers.h; sourceTree = "<group>"; };
+		CBDFCA12222A803000C5E282 /* flatc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flatc.h; sourceTree = "<group>"; };
+		CBDFCA13222A803000C5E282 /* flexbuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flexbuffers.h; sourceTree = "<group>"; };
+		CBDFCA14222A803000C5E282 /* minireflect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minireflect.h; sourceTree = "<group>"; };
+		CBDFCA15222A803000C5E282 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		CBDFCA16222A803000C5E282 /* code_generators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = code_generators.h; sourceTree = "<group>"; };
+		CBDFCA17222A803000C5E282 /* stl_emulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stl_emulation.h; sourceTree = "<group>"; };
+		CBDFCA18222A803000C5E282 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		CBDFCA19222A803000C5E282 /* reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reflection.h; sourceTree = "<group>"; };
+		CBDFCA1A222A803000C5E282 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		CBDFCA29222A8C2800C5E282 /* NSString+CPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CPP.h"; sourceTree = "<group>"; };
+		CBDFCA2A222A8C2800C5E282 /* NSString+CPP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CPP.m"; sourceTree = "<group>"; };
+		CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMStringIntDictionaryBuilder.h; sourceTree = "<group>"; };
+		CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStringIntDictionaryBuilder.mm; sourceTree = "<group>"; };
+		CBDFCA35222A937700C5E282 /* MemoryMappedCollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryMappedCollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDFCA41222A938F00C5E282 /* MMStringIntDictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMStringIntDictionaryTests.swift; sourceTree = "<group>"; };
+		CBDFCA42222A938F00C5E282 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMappedNaiveBayesClassifierTests.swift; sourceTree = "<group>"; };
+		CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MemoryMappedBayes.model; sourceTree = "<group>"; };
 		CBF4C8402225E5F500CDF6F9 /* TestBundleSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBundleSettings.swift; sourceTree = "<group>"; };
 		CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextClassificationMacOS.h; sourceTree = "<group>"; };
@@ -171,7 +263,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDFCA48222A98BB00C5E282 /* MemoryMappedCollections.framework in Frameworks */,
 				CB61FFB922232AE600E21B14 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFC9C12229F15D00C5E282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFCA32222A937700C5E282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFCA3A222A937700C5E282 /* MemoryMappedCollections.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +287,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDFCA50222AA30E00C5E282 /* MemoryMappedCollections.framework in Frameworks */,
 				CBF4C8612225EB2400CDF6F9 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +304,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDFC9D92229F15E00C5E282 /* MemoryMappedCollections.framework in Frameworks */,
 				CBF4C8EE2229DE1100CDF6F9 /* SQLite.framework in Frameworks */,
 				CBF4C8E92229DDF200CDF6F9 /* TextClassification.framework in Frameworks */,
 			);
@@ -219,6 +329,8 @@
 				CB61FF98222304E700E21B14 /* TextClassification */,
 				CBF4C8482225EA9900CDF6F9 /* TextClassificationMacOS */,
 				CBF4C8542225EAB000CDF6F9 /* TextClassificationMacOSTests */,
+				CBDFC9C52229F15E00C5E282 /* MemoryMappedCollections */,
+				CBDFCA40222A938F00C5E282 /* MemoryMappedCollectionsTests */,
 				CBF4C8DF2228A2ED00CDF6F9 /* TestOutput */,
 				CBF4C89D22273ECA00CDF6F9 /* MessageFilteringApp */,
 				CBF4C8B322273EE600CDF6F9 /* MessageFilteringExtension */,
@@ -235,6 +347,8 @@
 				CBF4C8532225EAB000CDF6F9 /* TextClassificationMacOSTests.xctest */,
 				CBF4C89C22273ECA00CDF6F9 /* MessageFilteringApp.app */,
 				CBF4C8B222273EE600CDF6F9 /* MessageFilteringExtension.appex */,
+				CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */,
+				CBDFCA35222A937700C5E282 /* MemoryMappedCollectionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +387,7 @@
 				CB61FFCD222338D900E21B14 /* LanguageRecognizerClassifierTests.swift */,
 				CBF4C8702225EF0200CDF6F9 /* CoreMLClassifier+CreateMLTests.swift */,
 				CBF4C89122272CBD00CDF6F9 /* NaiveBayesClassifierTests.swift */,
+				CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -297,6 +412,54 @@
 				CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */,
 			);
 			path = TextClassifier;
+			sourceTree = "<group>";
+		};
+		CBDFC9C52229F15E00C5E282 /* MemoryMappedCollections */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFCA0C222A803000C5E282 /* flatbuffers */,
+				CBDFC9C62229F15E00C5E282 /* MemoryMappedCollections.h */,
+				CBDFC9E9222A7D8B00C5E282 /* MMStringIntDictionary.h */,
+				CBDFC9EA222A7D8B00C5E282 /* MMStringIntDictionary.mm */,
+				CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */,
+				CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */,
+				CBDFCA29222A8C2800C5E282 /* NSString+CPP.h */,
+				CBDFCA2A222A8C2800C5E282 /* NSString+CPP.m */,
+				CBDFC9C72229F15E00C5E282 /* Info.plist */,
+				CBDFC9E7222A7D1900C5E282 /* schema_generated.h */,
+				CBDFC9E5222A79DB00C5E282 /* schema.fbs */,
+			);
+			path = MemoryMappedCollections;
+			sourceTree = "<group>";
+		};
+		CBDFCA0C222A803000C5E282 /* flatbuffers */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFCA0D222A803000C5E282 /* grpc.h */,
+				CBDFCA0E222A803000C5E282 /* idl.h */,
+				CBDFCA0F222A803000C5E282 /* reflection_generated.h */,
+				CBDFCA10222A803000C5E282 /* registry.h */,
+				CBDFCA11222A803000C5E282 /* flatbuffers.h */,
+				CBDFCA12222A803000C5E282 /* flatc.h */,
+				CBDFCA13222A803000C5E282 /* flexbuffers.h */,
+				CBDFCA14222A803000C5E282 /* minireflect.h */,
+				CBDFCA15222A803000C5E282 /* util.h */,
+				CBDFCA16222A803000C5E282 /* code_generators.h */,
+				CBDFCA17222A803000C5E282 /* stl_emulation.h */,
+				CBDFCA18222A803000C5E282 /* hash.h */,
+				CBDFCA19222A803000C5E282 /* reflection.h */,
+				CBDFCA1A222A803000C5E282 /* base.h */,
+			);
+			path = flatbuffers;
+			sourceTree = "<group>";
+		};
+		CBDFCA40222A938F00C5E282 /* MemoryMappedCollectionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFCA41222A938F00C5E282 /* MMStringIntDictionaryTests.swift */,
+				CBDFCA42222A938F00C5E282 /* Info.plist */,
+			);
+			path = MemoryMappedCollectionsTests;
 			sourceTree = "<group>";
 		};
 		CBF4C8482225EA9900CDF6F9 /* TextClassificationMacOS */ = {
@@ -419,6 +582,7 @@
 		CBF4C8DF2228A2ED00CDF6F9 /* TestOutput */ = {
 			isa = PBXGroup;
 			children = (
+				CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */,
 				CBF4C8E02228A2ED00CDF6F9 /* CoreMLLanguageClassifier.mlmodel */,
 				CBF4C8E32228A84500CDF6F9 /* NaiveBayes.model */,
 			);
@@ -433,6 +597,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB61FFA7222304E700E21B14 /* TextClassification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFC9BF2229F15D00C5E282 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFCA2F222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h in Headers */,
+				CBDFCA20222A803000C5E282 /* flatc.h in Headers */,
+				CBDFCA21222A803000C5E282 /* flexbuffers.h in Headers */,
+				CBDFCA1B222A803000C5E282 /* grpc.h in Headers */,
+				CBDFCA22222A803000C5E282 /* minireflect.h in Headers */,
+				CBDFCA1D222A803000C5E282 /* reflection_generated.h in Headers */,
+				CBDFCA26222A803000C5E282 /* hash.h in Headers */,
+				CBDFCA2B222A8C2800C5E282 /* NSString+CPP.h in Headers */,
+				CBDFCA25222A803000C5E282 /* stl_emulation.h in Headers */,
+				CBDFC9D62229F15E00C5E282 /* MemoryMappedCollections.h in Headers */,
+				CBDFCA23222A803000C5E282 /* util.h in Headers */,
+				CBDFCA24222A803000C5E282 /* code_generators.h in Headers */,
+				CBDFC9EB222A7D8B00C5E282 /* MMStringIntDictionary.h in Headers */,
+				CBDFCA1E222A803000C5E282 /* registry.h in Headers */,
+				CBDFC9E8222A7D1900C5E282 /* schema_generated.h in Headers */,
+				CBDFCA27222A803000C5E282 /* reflection.h in Headers */,
+				CBDFCA1C222A803000C5E282 /* idl.h in Headers */,
+				CBDFCA1F222A803000C5E282 /* flatbuffers.h in Headers */,
+				CBDFCA28222A803000C5E282 /* base.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,11 +650,48 @@
 			buildRules = (
 			);
 			dependencies = (
+				CBDFCA47222A98B500C5E282 /* PBXTargetDependency */,
 			);
 			name = TextClassification;
 			productName = TextClassification;
 			productReference = CB61FF96222304E700E21B14 /* TextClassification.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDFC9DF2229F15E00C5E282 /* Build configuration list for PBXNativeTarget "MemoryMappedCollections" */;
+			buildPhases = (
+				CBDFC9BF2229F15D00C5E282 /* Headers */,
+				CBDFC9C02229F15D00C5E282 /* Sources */,
+				CBDFC9C12229F15D00C5E282 /* Frameworks */,
+				CBDFC9C22229F15D00C5E282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryMappedCollections;
+			productName = MemoryMappedCollections;
+			productReference = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBDFCA34222A937700C5E282 /* MemoryMappedCollectionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDFCA3D222A937700C5E282 /* Build configuration list for PBXNativeTarget "MemoryMappedCollectionsTests" */;
+			buildPhases = (
+				CBDFCA31222A937700C5E282 /* Sources */,
+				CBDFCA32222A937700C5E282 /* Frameworks */,
+				CBDFCA33222A937700C5E282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBDFCA3C222A937700C5E282 /* PBXTargetDependency */,
+			);
+			name = MemoryMappedCollectionsTests;
+			productName = MemoryMappedCollectionsTests;
+			productReference = CBDFCA35222A937700C5E282 /* MemoryMappedCollectionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CBF4C8462225EA9800CDF6F9 /* TextClassificationMacOS */ = {
 			isa = PBXNativeTarget;
@@ -479,6 +706,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CBDFCA4A222A98C100C5E282 /* PBXTargetDependency */,
 			);
 			name = TextClassificationMacOS;
 			productName = TextClassificationMacOS;
@@ -518,6 +746,7 @@
 			dependencies = (
 				CBF4C8B822273EE600CDF6F9 /* PBXTargetDependency */,
 				CBF4C8EC2229DDF200CDF6F9 /* PBXTargetDependency */,
+				CBDFC9D82229F15E00C5E282 /* PBXTargetDependency */,
 			);
 			name = MessageFilteringApp;
 			productName = MessageFilteringApp;
@@ -555,6 +784,12 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
+					CBDFC9C32229F15D00C5E282 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CBDFCA34222A937700C5E282 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					CBF4C8462225EA9800CDF6F9 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -587,6 +822,8 @@
 				CBF4C8522225EAB000CDF6F9 /* TextClassificationMacOSTests */,
 				CBF4C89B22273ECA00CDF6F9 /* MessageFilteringApp */,
 				CBF4C8B122273EE600CDF6F9 /* MessageFilteringExtension */,
+				CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */,
+				CBDFCA34222A937700C5E282 /* MemoryMappedCollectionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -596,6 +833,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFC9C22229F15D00C5E282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFC9E6222A79DB00C5E282 /* schema.fbs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFCA33222A937700C5E282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFCA4D222AA11300C5E282 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +874,7 @@
 				CBF4C8A922273ECC00CDF6F9 /* LaunchScreen.storyboard in Resources */,
 				CBF4C8A622273ECC00CDF6F9 /* Assets.xcassets in Resources */,
 				CBF4C8E42228A84500CDF6F9 /* NaiveBayes.model in Resources */,
+				CBDFCA54222AA64300C5E282 /* MemoryMappedBayes.model in Resources */,
 				CBF4C8A422273ECA00CDF6F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,6 +883,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDFCA53222AA64200C5E282 /* MemoryMappedBayes.model in Resources */,
 				CBF4C8E52228A84500CDF6F9 /* NaiveBayes.model in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +951,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBDFC9C02229F15D00C5E282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFCA30222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm in Sources */,
+				CBDFC9EC222A7D8B00C5E282 /* MMStringIntDictionary.mm in Sources */,
+				CBDFCA2C222A8C2800C5E282 /* NSString+CPP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDFCA31222A937700C5E282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDFCA43222A938F00C5E282 /* MMStringIntDictionaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBF4C8432225EA9800CDF6F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -709,7 +982,7 @@
 				CBF4C8672225EBCC00CDF6F9 /* CoreMLClassifier.swift in Sources */,
 				CBF4C86A2225EC2000CDF6F9 /* Dataset+MLDataTable.swift in Sources */,
 				CBF4C8632225EBCC00CDF6F9 /* Dataset.swift in Sources */,
-				CBF4C8F62229E6DD00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */,
+				CBDFCA4C222A99B200C5E282 /* MemoryMappedNaiveBayesClassifier.swift in Sources */,
 				CBF4C8662225EBCC00CDF6F9 /* LanguageRecognizerClassifier.swift in Sources */,
 				CBF4C8652225EBCC00CDF6F9 /* TextClassifier.swift in Sources */,
 			);
@@ -726,6 +999,7 @@
 				CBF4C8762225F20B00CDF6F9 /* TestDatasets.swift in Sources */,
 				CBF4C89522272F6700CDF6F9 /* LanguageRecognizerClassifierTests.swift in Sources */,
 				CBF4C87C2225F23200CDF6F9 /* BaseClassifierTestCase.swift in Sources */,
+				CBDFCA4F222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift in Sources */,
 				CBF4C89722272F6700CDF6F9 /* NaiveBayesClassifierTests.swift in Sources */,
 				CBF4C8782225F20C00CDF6F9 /* TestBundleSettings.swift in Sources */,
 			);
@@ -756,6 +1030,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CBDFC9D82229F15E00C5E282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
+			targetProxy = CBDFC9D72229F15E00C5E282 /* PBXContainerItemProxy */;
+		};
+		CBDFCA3C222A937700C5E282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
+			targetProxy = CBDFCA3B222A937700C5E282 /* PBXContainerItemProxy */;
+		};
+		CBDFCA47222A98B500C5E282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
+			targetProxy = CBDFCA46222A98B500C5E282 /* PBXContainerItemProxy */;
+		};
+		CBDFCA4A222A98C100C5E282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
+			targetProxy = CBDFCA49222A98C100C5E282 /* PBXContainerItemProxy */;
+		};
 		CBF4C85A2225EAB000CDF6F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBF4C8462225EA9800CDF6F9 /* TextClassificationMacOS */;
@@ -978,6 +1272,96 @@
 			};
 			name = Release;
 		};
+		CBDFC9DB2229F15E00C5E282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MemoryMappedCollections/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollections;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		CBDFC9DC2229F15E00C5E282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MemoryMappedCollections/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollections;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		CBDFCA3E222A937700C5E282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MemoryMappedCollectionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollectionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBDFCA3F222A937700C5E282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MemoryMappedCollectionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollectionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CBF4C84D2225EA9900CDF6F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1183,6 +1567,24 @@
 			buildConfigurations = (
 				CB61FFAB222304E700E21B14 /* Debug */,
 				CB61FFAC222304E700E21B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDFC9DF2229F15E00C5E282 /* Build configuration list for PBXNativeTarget "MemoryMappedCollections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDFC9DB2229F15E00C5E282 /* Debug */,
+				CBDFC9DC2229F15E00C5E282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDFCA3D222A937700C5E282 /* Build configuration list for PBXNativeTarget "MemoryMappedCollectionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDFCA3E222A937700C5E282 /* Debug */,
+				CBDFCA3F222A937700C5E282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

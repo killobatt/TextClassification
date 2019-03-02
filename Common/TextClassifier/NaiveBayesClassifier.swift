@@ -51,13 +51,13 @@ public class NaiveBayesClassifier: TrainableTextClassifier {
 
     // MARK: - Calculations
 
-    private func allLabels() -> [String] {
+    func allLabels() -> [String] {
         return model.map { $0.key }
     }
 
     private var numberOfFeaturesByLabelCache: [String: Int] = [:]
 
-    private func cachingNumberOfFeatures(for label: String) -> Int {
+    func cachingNumberOfFeatures(for label: String) -> Int {
         if let number = numberOfFeaturesByLabelCache[label] {
             return number
         } else {
@@ -68,7 +68,7 @@ public class NaiveBayesClassifier: TrainableTextClassifier {
     }
 
     private var cachedTotalNumberOfFeatures: Int? = nil
-    private func cachingTotalNumberOfFeatures() -> Int {
+    func cachingTotalNumberOfFeatures() -> Int {
         if let number = cachedTotalNumberOfFeatures {
             return number
         } else {
@@ -78,13 +78,17 @@ public class NaiveBayesClassifier: TrainableTextClassifier {
         }
     }
 
-    private func numberOfFeatures(for label: String) -> Int {
+    func numberOfFeatures(for label: String) -> Int {
         guard let statistics = model[label] else { return 0 }
         return statistics.map { $0.value }.reduce(0, +)
     }
 
-    private func totalNumberOfFeatures() -> Int {
+    func totalNumberOfFeatures() -> Int {
         return model.map { cachingNumberOfFeatures(for: $0.key) }.reduce(0, +)
+    }
+
+    func featureCountInIndex(feature: String, label: String) -> Int {
+        return model[label]?[feature] ?? 0
     }
 
     func probability(of features: [String: Int], toHaveLabel label: String) -> Double {
@@ -92,7 +96,7 @@ public class NaiveBayesClassifier: TrainableTextClassifier {
         let numberOfLabelFeatures = Double(self.cachingNumberOfFeatures(for: label))
         var sum = log(numberOfLabelFeatures / totalNumberOfFeatures)
         for (feature, featureCount) in features {
-            let featureCountInModel = Double(model[label]?[feature] ?? 0)
+            let featureCountInModel = Double(featureCountInIndex(feature: feature, label: label))
             sum += log(Double(featureCount) * (featureCountInModel + laplasFactor) /
                       (numberOfLabelFeatures + totalNumberOfFeatures * laplasFactor))
         }

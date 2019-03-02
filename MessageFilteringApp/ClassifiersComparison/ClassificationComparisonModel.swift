@@ -18,13 +18,15 @@ class ClassificationComparisonModel {
     private(set) var classifiers: [NamedTextClassifier]
 
     init() {
-        let languageRecognizerClassifier = LanguageRecognizerClassifier()
-        let coreMLClassifier = CoreMLLanguageClassifier()
-        let naiveBayesClassifier = NaiveBayesClassifier.loadClassifier()
+//        let languageRecognizerClassifier = LanguageRecognizerClassifier()
+//        let coreMLClassifier = CoreMLLanguageClassifier()
+//        let naiveBayesClassifier = NaiveBayesClassifier.loadClassifier()
+        let memoryMappedNaiveBayes = MemoryMappedNaiveBayesClassifier.loadClassifier()
         self.classifiers = [
-            languageRecognizerClassifier,
-            coreMLClassifier,
-            naiveBayesClassifier,
+//            languageRecognizerClassifier,
+//            coreMLClassifier,
+//            naiveBayesClassifier,
+            memoryMappedNaiveBayes,
         ]
     }
 
@@ -70,5 +72,22 @@ extension NaiveBayesClassifier: NamedTextClassifier {
             fatalError("Error loading NaiveBayesClassifier from \(url):\n \(error)")
         }
 
+    }
+}
+
+extension MemoryMappedNaiveBayesClassifier: NamedTextClassifier {
+    var name: String {
+        return "Naive Bayes + Memory mapping"
+    }
+
+    static func loadClassifier() -> MemoryMappedNaiveBayesClassifier {
+        guard let url = Bundle.main.url(forResource: "MemoryMappedBayes", withExtension: "model") else {
+            fatalError("Missing resource file: NaiveBayes.model")
+        }
+        do {
+            return try MemoryMappedNaiveBayesClassifier(fileURL: url, preprocessor: TrivialPreprocessor())
+        } catch let error {
+            fatalError("Error loading MemoryMappedNaiveBayesClassifier from \(url):\n \(error)")
+        }
     }
 }
