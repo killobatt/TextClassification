@@ -15,6 +15,8 @@ public struct DatasetItem: Codable {
 
 public protocol Dataset {
     var items: [DatasetItem] { get }
+    var labels: Set<String> { get }
+    func items(for label: String) -> [DatasetItem]
 }
 
 public extension Dataset {
@@ -25,10 +27,14 @@ public extension Dataset {
                     return []
             }
 
-            let items = self.items
-            let startIndex = Int((Double(items.count) * startPersentage).rounded(.down))
-            let endIndex = Int((Double(items.count) * endPersentage).rounded(.up))
-            return Array(items[startIndex..<endIndex])
+            var result: [DatasetItem] = []
+            for label in labels {
+                let items = self.items(for: label)
+                let startIndex = Int((Double(items.count) * startPersentage).rounded(.down))
+                let endIndex = Int((Double(items.count) * endPersentage).rounded(.up))
+                result.append(contentsOf: items[startIndex..<endIndex])
+            }
+            return result
         }
     }
 

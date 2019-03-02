@@ -64,13 +64,23 @@ class CoreMLClassifier_CreateMLTests: BaseClassifierTestCase {
         XCTAssertGreaterThan(testResults.accuracy, 1.0)
     }
 
-    func testCrossvalidate() {
+    func testCrossvalidateTrivialPrepocessor() {
         // GIVEN
-        let preprocessor = TrivialPreprocessor()
         let dataset = self.testDatasets.testDataset
 
         // WHEN
-        let results = CoreMLClassifier.crossValidate(on: dataset, with: preprocessor)
+        let results = CoreMLClassifier.crossValidate(on: dataset, with: TrivialPreprocessor())
+
+        // THEN
+        XCTAssertGreaterThan(results.accuracy, 1.0)
+    }
+
+    func testCrossvalidateAdvancedPreprocessor() {
+        // GIVEN
+        let dataset = self.testDatasets.testDataset
+
+        // WHEN
+        let results = CoreMLClassifier.crossValidate(on: dataset, with: AdvancedPreprocessor())
 
         // THEN
         XCTAssertGreaterThan(results.accuracy, 1.0)

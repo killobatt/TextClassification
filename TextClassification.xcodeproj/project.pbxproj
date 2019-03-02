@@ -48,6 +48,10 @@
 		CBDFCA50222AA30E00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
 		CBDFCA53222AA64200C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
 		CBDFCA54222AA64300C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
+		CBDFCA57222ADFB400C5E282 /* AdvancedPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA55222ADF8F00C5E282 /* AdvancedPreprocessor.swift */; };
+		CBDFCA58222ADFB500C5E282 /* AdvancedPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA55222ADF8F00C5E282 /* AdvancedPreprocessor.swift */; };
+		CBDFCA5C222AE54B00C5E282 /* TrivialPreprocessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA5B222AE54B00C5E282 /* TrivialPreprocessorTests.swift */; };
+		CBDFCA5F222AE6E600C5E282 /* AdvancedPreprocessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA5E222AE6E600C5E282 /* AdvancedPreprocessorTests.swift */; };
 		CBF4C84B2225EA9900CDF6F9 /* TextClassificationMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBF4C8582225EAB000CDF6F9 /* TextClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */; };
 		CBF4C8612225EB2400CDF6F9 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C8602225EB2400CDF6F9 /* SQLite.framework */; };
@@ -224,6 +228,9 @@
 		CBDFCA42222A938F00C5E282 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMappedNaiveBayesClassifierTests.swift; sourceTree = "<group>"; };
 		CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MemoryMappedBayes.model; sourceTree = "<group>"; };
+		CBDFCA55222ADF8F00C5E282 /* AdvancedPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPreprocessor.swift; sourceTree = "<group>"; };
+		CBDFCA5B222AE54B00C5E282 /* TrivialPreprocessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialPreprocessorTests.swift; sourceTree = "<group>"; };
+		CBDFCA5E222AE6E600C5E282 /* AdvancedPreprocessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPreprocessorTests.swift; sourceTree = "<group>"; };
 		CBF4C8402225E5F500CDF6F9 /* TestBundleSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBundleSettings.swift; sourceTree = "<group>"; };
 		CBF4C8472225EA9800CDF6F9 /* TextClassification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF4C8492225EA9900CDF6F9 /* TextClassificationMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextClassificationMacOS.h; sourceTree = "<group>"; };
@@ -383,11 +390,9 @@
 			isa = PBXGroup;
 			children = (
 				CBF4C8722225F12300CDF6F9 /* BaseClassifierTestCase.swift */,
-				CB61FFBA22232F7200E21B14 /* SQLiteDatasetTests.swift */,
-				CB61FFCD222338D900E21B14 /* LanguageRecognizerClassifierTests.swift */,
-				CBF4C8702225EF0200CDF6F9 /* CoreMLClassifier+CreateMLTests.swift */,
-				CBF4C89122272CBD00CDF6F9 /* NaiveBayesClassifierTests.swift */,
-				CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */,
+				CBDFCA5A222AE52F00C5E282 /* Dataset */,
+				CBDFCA5D222AE54E00C5E282 /* Preprocessor */,
+				CBDFCA59222AE52300C5E282 /* Classifier */,
 			);
 			path = TestCases;
 			sourceTree = "<group>";
@@ -460,6 +465,34 @@
 				CBDFCA42222A938F00C5E282 /* Info.plist */,
 			);
 			path = MemoryMappedCollectionsTests;
+			sourceTree = "<group>";
+		};
+		CBDFCA59222AE52300C5E282 /* Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFCD222338D900E21B14 /* LanguageRecognizerClassifierTests.swift */,
+				CBF4C8702225EF0200CDF6F9 /* CoreMLClassifier+CreateMLTests.swift */,
+				CBF4C89122272CBD00CDF6F9 /* NaiveBayesClassifierTests.swift */,
+				CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */,
+			);
+			path = Classifier;
+			sourceTree = "<group>";
+		};
+		CBDFCA5A222AE52F00C5E282 /* Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				CB61FFBA22232F7200E21B14 /* SQLiteDatasetTests.swift */,
+			);
+			path = Dataset;
+			sourceTree = "<group>";
+		};
+		CBDFCA5D222AE54E00C5E282 /* Preprocessor */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFCA5B222AE54B00C5E282 /* TrivialPreprocessorTests.swift */,
+				CBDFCA5E222AE6E600C5E282 /* AdvancedPreprocessorTests.swift */,
+			);
+			path = Preprocessor;
 			sourceTree = "<group>";
 		};
 		CBF4C8482225EA9900CDF6F9 /* TextClassificationMacOS */ = {
@@ -542,6 +575,7 @@
 			children = (
 				CBF4C88722271ED200CDF6F9 /* Preprocessor.swift */,
 				CBF4C88C22271F7A00CDF6F9 /* TrivialPreprocessor.swift */,
+				CBDFCA55222ADF8F00C5E282 /* AdvancedPreprocessor.swift */,
 			);
 			path = Preprocessor;
 			sourceTree = "<group>";
@@ -946,6 +980,7 @@
 				CBF4C88B22271F0A00CDF6F9 /* Preprocessor.swift in Sources */,
 				CB61FFC9222335B500E21B14 /* LanguageRecognizerClassifier.swift in Sources */,
 				CBF4C8F52229E6DA00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift in Sources */,
+				CBDFCA57222ADFB400C5E282 /* AdvancedPreprocessor.swift in Sources */,
 				CB61FFC42223313E00E21B14 /* TextClassifier.swift in Sources */,
 				CBF4C88622271DDD00CDF6F9 /* NaiveBayesClassifier.swift in Sources */,
 			);
@@ -980,6 +1015,7 @@
 				CBF4C87F2226878800CDF6F9 /* RAMDataset.swift in Sources */,
 				CBF4C8642225EBCC00CDF6F9 /* SQLiteDataset.swift in Sources */,
 				CBF4C8672225EBCC00CDF6F9 /* CoreMLClassifier.swift in Sources */,
+				CBDFCA58222ADFB500C5E282 /* AdvancedPreprocessor.swift in Sources */,
 				CBF4C86A2225EC2000CDF6F9 /* Dataset+MLDataTable.swift in Sources */,
 				CBF4C8632225EBCC00CDF6F9 /* Dataset.swift in Sources */,
 				CBDFCA4C222A99B200C5E282 /* MemoryMappedNaiveBayesClassifier.swift in Sources */,
@@ -993,6 +1029,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF4C8792225F20C00CDF6F9 /* TextClassifierExtensions.swift in Sources */,
+				CBDFCA5C222AE54B00C5E282 /* TrivialPreprocessorTests.swift in Sources */,
 				CBF4C89622272F6700CDF6F9 /* CoreMLClassifier+CreateMLTests.swift in Sources */,
 				CBF4C8772225F20C00CDF6F9 /* TestResults.swift in Sources */,
 				CBF4C89422272F6700CDF6F9 /* SQLiteDatasetTests.swift in Sources */,
@@ -1001,6 +1038,7 @@
 				CBF4C87C2225F23200CDF6F9 /* BaseClassifierTestCase.swift in Sources */,
 				CBDFCA4F222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift in Sources */,
 				CBF4C89722272F6700CDF6F9 /* NaiveBayesClassifierTests.swift in Sources */,
+				CBDFCA5F222AE6E600C5E282 /* AdvancedPreprocessorTests.swift in Sources */,
 				CBF4C8782225F20C00CDF6F9 /* TestBundleSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

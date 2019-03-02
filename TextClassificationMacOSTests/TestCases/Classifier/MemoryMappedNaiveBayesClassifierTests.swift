@@ -61,12 +61,23 @@ class MemoryMappedNaiveBayesClassifierTests: BaseClassifierTestCase {
         XCTAssertGreaterThan(testResults.accuracy, 1.0)
     }
 
-    func testCrossvalidate() {
+    func testCrossvalidateTrivialPrepocessor() {
         // GIVEN
         let dataset = self.testDatasets.testDataset
 
         // WHEN
         let results = MemoryMappedNaiveBayesClassifier.crossValidate(on: dataset, with: TrivialPreprocessor())
+
+        // THEN
+        XCTAssertGreaterThan(results.accuracy, 1.0)
+    }
+
+    func testCrossvalidateAdvancedPreprocessor() {
+        // GIVEN
+        let dataset = self.testDatasets.testDataset
+
+        // WHEN
+        let results = MemoryMappedNaiveBayesClassifier.crossValidate(on: dataset, with: AdvancedPreprocessor())
 
         // THEN
         XCTAssertGreaterThan(results.accuracy, 1.0)

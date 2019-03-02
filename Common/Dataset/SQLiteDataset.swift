@@ -24,6 +24,15 @@ public class SQLiteDataset: Dataset {
                                  FROM message
                                  WHERE language_code is NOT NULL;
                                  """
+        static let messagesByLabel = """
+                                 SELECT id, text, language_code
+                                 FROM message
+                                 WHERE language_code == ?
+                                 """
+        static let allLabels = """
+                               SELECT DISTINCT language_code
+                               FROM message;
+                               """
     }
 
     // MARK: - Dataset
@@ -35,6 +44,34 @@ public class SQLiteDataset: Dataset {
             assertionFailure("Failed to execute SQL request: \(SQLRequests.allMessages), error: \(error)")
             return []
         }
+    }
+
+    public var labels: Set<String> {
+        do {
+            return Set(try database.prepare(SQLRequests.allLabels).compactMap { String(row: $0) })
+        } catch let error {
+            assertionFailure("Failed to execute SQL request: \(SQLRequests.allMessages), error: \(error)")
+            return []
+        }
+    }
+
+    public func items(for label: String) -> [DatasetItem] {
+        do {
+            return try database.prepare(SQLRequests.messagesByLabel, label).compactMap { DatasetItem(row: $0) }
+        } catch let error {
+            assertionFailure("Failed to execute SQL request: \(SQLRequests.allMessages), error: \(error)")
+            return []
+        }
+    }
+}
+
+fileprivate extension String {
+    init?(row: SQLite.Statement.Element) {
+        guard row.count >= 1,
+            let value = row[0] as? String else {
+            return nil
+        }
+        self.init(value)
     }
 }
 
