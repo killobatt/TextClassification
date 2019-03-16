@@ -35,15 +35,12 @@
 		CBDFCA26222A803000C5E282 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA18222A803000C5E282 /* hash.h */; };
 		CBDFCA27222A803000C5E282 /* reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA19222A803000C5E282 /* reflection.h */; };
 		CBDFCA28222A803000C5E282 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA1A222A803000C5E282 /* base.h */; };
-		CBDFCA2B222A8C2800C5E282 /* NSString+CPP.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA29222A8C2800C5E282 /* NSString+CPP.h */; };
-		CBDFCA2C222A8C2800C5E282 /* NSString+CPP.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA2A222A8C2800C5E282 /* NSString+CPP.m */; };
 		CBDFCA2F222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBDFCA30222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */; };
 		CBDFCA3A222A937700C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
 		CBDFCA43222A938F00C5E282 /* MMStringIntDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA41222A938F00C5E282 /* MMStringIntDictionaryTests.swift */; };
 		CBDFCA48222A98BB00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
 		CBDFCA4C222A99B200C5E282 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
-		CBDFCA4D222AA11300C5E282 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA42222A938F00C5E282 /* Info.plist */; };
 		CBDFCA4F222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */; };
 		CBDFCA50222AA30E00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
 		CBDFCA53222AA64200C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
@@ -219,8 +216,6 @@
 		CBDFCA18222A803000C5E282 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
 		CBDFCA19222A803000C5E282 /* reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reflection.h; sourceTree = "<group>"; };
 		CBDFCA1A222A803000C5E282 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
-		CBDFCA29222A8C2800C5E282 /* NSString+CPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CPP.h"; sourceTree = "<group>"; };
-		CBDFCA2A222A8C2800C5E282 /* NSString+CPP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CPP.m"; sourceTree = "<group>"; };
 		CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMStringIntDictionaryBuilder.h; sourceTree = "<group>"; };
 		CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStringIntDictionaryBuilder.mm; sourceTree = "<group>"; };
 		CBDFCA35222A937700C5E282 /* MemoryMappedCollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryMappedCollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,8 +423,6 @@
 				CBDFC9EA222A7D8B00C5E282 /* MMStringIntDictionary.mm */,
 				CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */,
 				CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */,
-				CBDFCA29222A8C2800C5E282 /* NSString+CPP.h */,
-				CBDFCA2A222A8C2800C5E282 /* NSString+CPP.m */,
 				CBDFC9C72229F15E00C5E282 /* Info.plist */,
 				CBDFC9E7222A7D1900C5E282 /* schema_generated.h */,
 				CBDFC9E5222A79DB00C5E282 /* schema.fbs */,
@@ -645,7 +638,6 @@
 				CBDFCA22222A803000C5E282 /* minireflect.h in Headers */,
 				CBDFCA1D222A803000C5E282 /* reflection_generated.h in Headers */,
 				CBDFCA26222A803000C5E282 /* hash.h in Headers */,
-				CBDFCA2B222A8C2800C5E282 /* NSString+CPP.h in Headers */,
 				CBDFCA25222A803000C5E282 /* stl_emulation.h in Headers */,
 				CBDFC9D62229F15E00C5E282 /* MemoryMappedCollections.h in Headers */,
 				CBDFCA23222A803000C5E282 /* util.h in Headers */,
@@ -882,7 +874,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBDFCA4D222AA11300C5E282 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,7 +983,6 @@
 			files = (
 				CBDFCA30222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm in Sources */,
 				CBDFC9EC222A7D8B00C5E282 /* MMStringIntDictionary.mm in Sources */,
-				CBDFCA2C222A8C2800C5E282 /* NSString+CPP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1370,6 +1360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EWA2VG7634;
 				INFOPLIST_FILE = MemoryMappedCollectionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1387,6 +1378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EWA2VG7634;
 				INFOPLIST_FILE = MemoryMappedCollectionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

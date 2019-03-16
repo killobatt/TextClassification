@@ -7,7 +7,6 @@
 //
 
 #import "MMStringIntDictionary.h"
-#import "NSString+CPP.h"
 #import "schema_generated.h"
 
 @interface MMStringIntDictionary ()
