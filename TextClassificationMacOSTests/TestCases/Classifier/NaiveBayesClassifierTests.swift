@@ -142,4 +142,27 @@ class NaiveBayesClassifierTests: BaseClassifierTestCase {
         XCTAssertEqual(probabilityOfFeatures["uk_translit"]!, -39.72, accuracy: 0.01)
         XCTAssertEqual(probabilityOfFeatures["ru_translit"]!, -40.19, accuracy: 0.01)
     }
+
+    func testPerformance() {
+        // GIVEN
+        let testDataset = self.testDatasets.testDataset
+
+        // WHEN
+        let classifier = NaiveBayesClassifier.train(with: TrivialPreprocessor(), on: testDataset) as! NaiveBayesClassifier
+
+        // THEN
+        self.measure {
+            _ = classifier.predictedLabel(for: "Вас вітає Славік!")
+
+            _ = classifier.predictedLabel(for: "Welcome to paradise")
+
+            _ = classifier.predictedLabel(for: "Has du bist?")
+
+            _ = classifier.predictedLabel(for: "Vashe zamovlennya gotove. " +
+                "Uvaga: rezultat v laboratornomu centri za predjavlennyam formy zamovlennya abo pasporta.")
+
+            _ = classifier.predictedLabel(for: "Kruto! Vash zakaz oplachen. Na mail@example.com " +
+                "otpravleny Vashy bilety. Ssylka na eti zhe bilety.")
+        }
+    }
 }

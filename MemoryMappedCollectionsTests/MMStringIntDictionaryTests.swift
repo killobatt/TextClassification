@@ -69,7 +69,7 @@ class MMStringIntDictionaryTests: XCTestCase {
         }
     }
 
-    func testReadPerformance() {
+    func testReadAndGetPerformance() {
         // GIVEN
         let keys = Array(0..<100_000).map { _ in UUID().uuidString }
         let testDictionary = keys
@@ -85,6 +85,40 @@ class MMStringIntDictionaryTests: XCTestCase {
             // MEASURE
             let dictionary = MMStringIntDictionary(data: data)
             let _ = keys.map { dictionary.int64(forKey: $0) }
+        }
+    }
+
+    func testReadPerformance() {
+        // GIVEN
+        let keys = Array(0..<100_000).map { _ in UUID().uuidString }
+        let testDictionary = keys
+            .reduce(into: [String: UInt32]()) { result, value in
+                result[value] = arc4random()
+            }
+            .mapValues { NSNumber(value: $0) }
+
+        let builder = MMStringIntDictionaryBuilder(dictionary: testDictionary)
+        let data = builder.serialize()
+        let dictionary = MMStringIntDictionary(data: data)
+
+        self.measure {
+            // MEASURE
+            let _ = keys.map { dictionary.int64(forKey: $0) }
+        }
+    }
+
+    func testDictionaryComparePerformance() {
+        // GIVEN
+        let keys = Array(0..<100_000).map { _ in UUID().uuidString }
+        let testDictionary = keys
+            .reduce(into: [String: UInt32]()) { result, value in
+                result[value] = arc4random()
+            }
+            .mapValues { NSNumber(value: $0) }
+
+        self.measure {
+            // MEASURE
+            let _ = keys.map { testDictionary[$0] }
         }
     }
 
