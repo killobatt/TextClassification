@@ -220,6 +220,7 @@
 		CB61FFCF2223390C00E21B14 /* TestDatasets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatasets.swift; sourceTree = "<group>"; };
 		CB61FFD122233A3200E21B14 /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
 		CB61FFD3222525E200E21B14 /* CoreMLClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLClassifier.swift; sourceTree = "<group>"; };
+		CBAE468C22ECD86D00BCC8EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryMappedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDFC9C62229F15E00C5E282 /* MemoryMappedCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMappedCollections.h; sourceTree = "<group>"; };
 		CBDFC9C72229F15E00C5E282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -367,6 +368,7 @@
 		CB61FF8C222304E700E21B14 = {
 			isa = PBXGroup;
 			children = (
+				CBAE468C22ECD86D00BCC8EF /* README.md */,
 				CB61FFB02223050600E21B14 /* Cartfile */,
 				CBF4C86B2225EC5000CDF6F9 /* Common */,
 				CB61FF98222304E700E21B14 /* TextClassification */,
