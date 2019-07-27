@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBF4C8462225EA9800CDF6F9"
-               BuildableName = "TextClassification.framework"
-               BlueprintName = "TextClassificationMacOS"
-               ReferencedContainer = "container:TextClassification.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBF4C8522225EAB000CDF6F9"
-               BuildableName = "TextClassificationMacOSTests.xctest"
-               BlueprintName = "TextClassificationMacOSTests"
+               BlueprintIdentifier = "CB2ED11A22EA47AA008F0C91"
+               BuildableName = "MemoryMappedCollections.framework"
+               BlueprintName = "MemoryMappedCollectionsMacOS"
                ReferencedContainer = "container:TextClassification.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBF4C8522225EAB000CDF6F9"
-               BuildableName = "TextClassificationMacOSTests.xctest"
-               BlueprintName = "TextClassificationMacOSTests"
-               ReferencedContainer = "container:TextClassification.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBF4C8462225EA9800CDF6F9"
-            BuildableName = "TextClassification.framework"
-            BlueprintName = "TextClassificationMacOS"
-            ReferencedContainer = "container:TextClassification.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -78,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBF4C8462225EA9800CDF6F9"
-            BuildableName = "TextClassification.framework"
-            BlueprintName = "TextClassificationMacOS"
+            BlueprintIdentifier = "CB2ED11A22EA47AA008F0C91"
+            BuildableName = "MemoryMappedCollections.framework"
+            BlueprintName = "MemoryMappedCollectionsMacOS"
             ReferencedContainer = "container:TextClassification.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBF4C8462225EA9800CDF6F9"
-            BuildableName = "TextClassification.framework"
-            BlueprintName = "TextClassificationMacOS"
+            BlueprintIdentifier = "CB2ED11A22EA47AA008F0C91"
+            BuildableName = "MemoryMappedCollections.framework"
+            BlueprintName = "MemoryMappedCollectionsMacOS"
             ReferencedContainer = "container:TextClassification.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

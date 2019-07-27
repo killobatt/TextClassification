@@ -9,15 +9,20 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>MessageFilteringApp.xcscheme_^#shared#^_</key>
+		<key>MemoryMappedCollectionsMacOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>MessageFilteringExtension.xcscheme_^#shared#^_</key>
+		<key>MessageFilteringApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>MessageFilteringExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>TextClassification.xcscheme_^#shared#^_</key>
 		<dict>
@@ -32,6 +37,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CB2ED11A22EA47AA008F0C91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CB61FF95222304E700E21B14</key>
 		<dict>
 			<key>primary</key>

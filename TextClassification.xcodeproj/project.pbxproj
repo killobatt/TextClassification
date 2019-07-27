@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2ED11F22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2ED11D22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2ED12322EA4848008F0C91 /* MemoryMappedCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFC9C62229F15E00C5E282 /* MemoryMappedCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2ED12422EA484D008F0C91 /* MMStringIntDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFC9E9222A7D8B00C5E282 /* MMStringIntDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2ED12522EA4852008F0C91 /* MMStringIntDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBDFC9EA222A7D8B00C5E282 /* MMStringIntDictionary.mm */; };
+		CB2ED12622EA4854008F0C91 /* MMStringIntDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA2D222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2ED12722EA4858008F0C91 /* MMStringIntDictionaryBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA2E222A8DEA00C5E282 /* MMStringIntDictionaryBuilder.mm */; };
+		CB2ED12822EA485B008F0C91 /* schema_generated.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFC9E7222A7D1900C5E282 /* schema_generated.h */; };
+		CB2ED12922EA4860008F0C91 /* schema.fbs in Resources */ = {isa = PBXBuildFile; fileRef = CBDFC9E5222A79DB00C5E282 /* schema.fbs */; };
+		CB2ED12A22EA4866008F0C91 /* grpc.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA0D222A803000C5E282 /* grpc.h */; };
+		CB2ED12B22EA4876008F0C91 /* idl.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA0E222A803000C5E282 /* idl.h */; };
+		CB2ED12C22EA4876008F0C91 /* reflection_generated.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA0F222A803000C5E282 /* reflection_generated.h */; };
+		CB2ED12D22EA4876008F0C91 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA10222A803000C5E282 /* registry.h */; };
+		CB2ED12E22EA4876008F0C91 /* flatbuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA11222A803000C5E282 /* flatbuffers.h */; };
+		CB2ED12F22EA4876008F0C91 /* flatc.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA12222A803000C5E282 /* flatc.h */; };
+		CB2ED13022EA4876008F0C91 /* flexbuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA13222A803000C5E282 /* flexbuffers.h */; };
+		CB2ED13122EA4876008F0C91 /* minireflect.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA14222A803000C5E282 /* minireflect.h */; };
+		CB2ED13222EA4876008F0C91 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA15222A803000C5E282 /* util.h */; };
+		CB2ED13322EA4876008F0C91 /* code_generators.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA16222A803000C5E282 /* code_generators.h */; };
+		CB2ED13422EA4876008F0C91 /* stl_emulation.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA17222A803000C5E282 /* stl_emulation.h */; };
+		CB2ED13522EA4876008F0C91 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA18222A803000C5E282 /* hash.h */; };
+		CB2ED13622EA4876008F0C91 /* reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA19222A803000C5E282 /* reflection.h */; };
+		CB2ED13722EA4876008F0C91 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDFCA1A222A803000C5E282 /* base.h */; };
+		CB2ED13A22EA48F7008F0C91 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2ED11B22EA47AA008F0C91 /* MemoryMappedCollections.framework */; };
 		CB61FFA7222304E700E21B14 /* TextClassification.h in Headers */ = {isa = PBXBuildFile; fileRef = CB61FF99222304E700E21B14 /* TextClassification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB61FFB72223180200E21B14 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB61FFB62223180200E21B14 /* Dataset.swift */; };
 		CB61FFB922232AE600E21B14 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB61FFB822232AE600E21B14 /* SQLite.framework */; };
@@ -42,7 +65,6 @@
 		CBDFCA48222A98BB00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
 		CBDFCA4C222A99B200C5E282 /* MemoryMappedNaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4C8F02229E5FB00CDF6F9 /* MemoryMappedNaiveBayesClassifier.swift */; };
 		CBDFCA4F222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA4E222AA27000C5E282 /* MemoryMappedNaiveBayesClassifierTests.swift */; };
-		CBDFCA50222AA30E00C5E282 /* MemoryMappedCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */; };
 		CBDFCA53222AA64200C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
 		CBDFCA54222AA64300C5E282 /* MemoryMappedBayes.model in Resources */ = {isa = PBXBuildFile; fileRef = CBDFCA51222AA44100C5E282 /* MemoryMappedBayes.model */; };
 		CBDFCA57222ADFB400C5E282 /* AdvancedPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFCA55222ADF8F00C5E282 /* AdvancedPreprocessor.swift */; };
@@ -100,6 +122,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB2ED13822EA48EE008F0C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB2ED11A22EA47AA008F0C91;
+			remoteInfo = MemoryMappedCollectionsMacOS;
+		};
 		CBDFC9D72229F15E00C5E282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
@@ -115,13 +144,6 @@
 			remoteInfo = MemoryMappedCollections;
 		};
 		CBDFCA46222A98B500C5E282 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CBDFC9C32229F15D00C5E282;
-			remoteInfo = MemoryMappedCollections;
-		};
-		CBDFCA49222A98C100C5E282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB61FF8D222304E700E21B14 /* Project object */;
 			proxyType = 1;
@@ -179,6 +201,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB2ED11B22EA47AA008F0C91 /* MemoryMappedCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryMappedCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2ED11D22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMappedCollectionsMacOS.h; sourceTree = "<group>"; };
+		CB2ED11E22EA47AA008F0C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB61FF96222304E700E21B14 /* TextClassification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB61FF99222304E700E21B14 /* TextClassification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextClassification.h; sourceTree = "<group>"; };
 		CB61FF9A222304E700E21B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,6 +286,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB2ED11822EA47AA008F0C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB61FF93222304E700E21B14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,7 +321,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBDFCA50222AA30E00C5E282 /* MemoryMappedCollections.framework in Frameworks */,
+				CB2ED13A22EA48F7008F0C91 /* MemoryMappedCollections.framework in Frameworks */,
 				CBF4C8612225EB2400CDF6F9 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +355,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB2ED11C22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB2ED11D22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS.h */,
+				CB2ED11E22EA47AA008F0C91 /* Info.plist */,
+			);
+			path = MemoryMappedCollectionsMacOS;
+			sourceTree = "<group>";
+		};
 		CB61FF8C222304E700E21B14 = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +373,7 @@
 				CBF4C8482225EA9900CDF6F9 /* TextClassificationMacOS */,
 				CBF4C8542225EAB000CDF6F9 /* TextClassificationMacOSTests */,
 				CBDFC9C52229F15E00C5E282 /* MemoryMappedCollections */,
+				CB2ED11C22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS */,
 				CBDFCA40222A938F00C5E282 /* MemoryMappedCollectionsTests */,
 				CBF4C8DF2228A2ED00CDF6F9 /* TestOutput */,
 				CBF4C89D22273ECA00CDF6F9 /* MessageFilteringApp */,
@@ -351,6 +393,7 @@
 				CBF4C8B222273EE600CDF6F9 /* MessageFilteringExtension.appex */,
 				CBDFC9C42229F15D00C5E282 /* MemoryMappedCollections.framework */,
 				CBDFCA35222A937700C5E282 /* MemoryMappedCollectionsTests.xctest */,
+				CB2ED11B22EA47AA008F0C91 /* MemoryMappedCollections.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -619,6 +662,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CB2ED11622EA47AA008F0C91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2ED13722EA4876008F0C91 /* base.h in Headers */,
+				CB2ED12D22EA4876008F0C91 /* registry.h in Headers */,
+				CB2ED12B22EA4876008F0C91 /* idl.h in Headers */,
+				CB2ED12322EA4848008F0C91 /* MemoryMappedCollections.h in Headers */,
+				CB2ED13622EA4876008F0C91 /* reflection.h in Headers */,
+				CB2ED12622EA4854008F0C91 /* MMStringIntDictionaryBuilder.h in Headers */,
+				CB2ED12422EA484D008F0C91 /* MMStringIntDictionary.h in Headers */,
+				CB2ED13422EA4876008F0C91 /* stl_emulation.h in Headers */,
+				CB2ED12E22EA4876008F0C91 /* flatbuffers.h in Headers */,
+				CB2ED12822EA485B008F0C91 /* schema_generated.h in Headers */,
+				CB2ED13122EA4876008F0C91 /* minireflect.h in Headers */,
+				CB2ED13022EA4876008F0C91 /* flexbuffers.h in Headers */,
+				CB2ED13322EA4876008F0C91 /* code_generators.h in Headers */,
+				CB2ED12C22EA4876008F0C91 /* reflection_generated.h in Headers */,
+				CB2ED12A22EA4866008F0C91 /* grpc.h in Headers */,
+				CB2ED12F22EA4876008F0C91 /* flatc.h in Headers */,
+				CB2ED13222EA4876008F0C91 /* util.h in Headers */,
+				CB2ED11F22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS.h in Headers */,
+				CB2ED13522EA4876008F0C91 /* hash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB61FF91222304E700E21B14 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -663,6 +732,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CB2ED11A22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2ED12022EA47AA008F0C91 /* Build configuration list for PBXNativeTarget "MemoryMappedCollectionsMacOS" */;
+			buildPhases = (
+				CB2ED11622EA47AA008F0C91 /* Headers */,
+				CB2ED11722EA47AA008F0C91 /* Sources */,
+				CB2ED11822EA47AA008F0C91 /* Frameworks */,
+				CB2ED11922EA47AA008F0C91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryMappedCollectionsMacOS;
+			productName = MemoryMappedCollectionsMacOS;
+			productReference = CB2ED11B22EA47AA008F0C91 /* MemoryMappedCollections.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		CB61FF95222304E700E21B14 /* TextClassification */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB61FFAA222304E700E21B14 /* Build configuration list for PBXNativeTarget "TextClassification" */;
@@ -732,7 +819,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				CBDFCA4A222A98C100C5E282 /* PBXTargetDependency */,
+				CB2ED13922EA48EE008F0C91 /* PBXTargetDependency */,
 			);
 			name = TextClassificationMacOS;
 			productName = TextClassificationMacOS;
@@ -803,30 +890,38 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = killobatt;
 				TargetAttributes = {
+					CB2ED11A22EA47AA008F0C91 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					CB61FF95222304E700E21B14 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					CBDFC9C32229F15D00C5E282 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					CBDFCA34222A937700C5E282 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					CBF4C8462225EA9800CDF6F9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					CBF4C8522225EAB000CDF6F9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					CBF4C89B22273ECA00CDF6F9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					CBF4C8B122273EE600CDF6F9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -849,12 +944,21 @@
 				CBF4C89B22273ECA00CDF6F9 /* MessageFilteringApp */,
 				CBF4C8B122273EE600CDF6F9 /* MessageFilteringExtension */,
 				CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */,
+				CB2ED11A22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS */,
 				CBDFCA34222A937700C5E282 /* MemoryMappedCollectionsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB2ED11922EA47AA008F0C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2ED12922EA4860008F0C91 /* schema.fbs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB61FF94222304E700E21B14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -959,6 +1063,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB2ED11722EA47AA008F0C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2ED12722EA4858008F0C91 /* MMStringIntDictionaryBuilder.mm in Sources */,
+				CB2ED12522EA4852008F0C91 /* MMStringIntDictionary.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB61FF92222304E700E21B14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1058,6 +1171,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB2ED13922EA48EE008F0C91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB2ED11A22EA47AA008F0C91 /* MemoryMappedCollectionsMacOS */;
+			targetProxy = CB2ED13822EA48EE008F0C91 /* PBXContainerItemProxy */;
+		};
 		CBDFC9D82229F15E00C5E282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
@@ -1072,11 +1190,6 @@
 			isa = PBXTargetDependency;
 			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
 			targetProxy = CBDFCA46222A98B500C5E282 /* PBXContainerItemProxy */;
-		};
-		CBDFCA4A222A98C100C5E282 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CBDFC9C32229F15D00C5E282 /* MemoryMappedCollections */;
-			targetProxy = CBDFCA49222A98C100C5E282 /* PBXContainerItemProxy */;
 		};
 		CBF4C85A2225EAB000CDF6F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1115,6 +1228,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB2ED12122EA47AA008F0C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MemoryMappedCollectionsMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollectionsMacOS;
+				PRODUCT_NAME = MemoryMappedCollections;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB2ED12222EA47AA008F0C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EWA2VG7634;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MemoryMappedCollectionsMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollectionsMacOS;
+				PRODUCT_NAME = MemoryMappedCollections;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		CB61FFA8222304E700E21B14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1264,7 +1433,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1295,7 +1464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassification;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1322,9 +1491,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollections;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -1350,9 +1518,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollections;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
@@ -1369,7 +1536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollectionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1387,7 +1554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.MemoryMappedCollectionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1419,7 +1586,7 @@
 				PRODUCT_NAME = TextClassification;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1450,7 +1617,7 @@
 				PRODUCT_NAME = TextClassification;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1471,7 +1638,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationMacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1492,7 +1659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.TextClassificationMacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1514,7 +1681,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1537,7 +1704,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1556,7 +1723,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1575,7 +1742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.killobatt.message-filter-test.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1583,6 +1750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB2ED12022EA47AA008F0C91 /* Build configuration list for PBXNativeTarget "MemoryMappedCollectionsMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2ED12122EA47AA008F0C91 /* Debug */,
+				CB2ED12222EA47AA008F0C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CB61FF90222304E700E21B14 /* Build configuration list for PBXProject "TextClassification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

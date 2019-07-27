@@ -20,7 +20,7 @@ public protocol Dataset {
 }
 
 public extension Dataset {
-    public subscript(startPersentage: Double, endPersentage: Double) -> [DatasetItem] {
+    subscript(startPersentage: Double, endPersentage: Double) -> [DatasetItem] {
         get {
             guard 0 <= startPersentage, startPersentage < 1.0, 0 < endPersentage, endPersentage <= 1.0,
                 startPersentage < endPersentage else {
@@ -38,7 +38,7 @@ public extension Dataset {
         }
     }
 
-    public func splitTestDataset(startPersentage: Double, endPersentage: Double) -> (trainDataset: Dataset, testDataset: Dataset) {
+    func splitTestDataset(startPersentage: Double, endPersentage: Double) -> (trainDataset: Dataset, testDataset: Dataset) {
         let trainDatasetItemsLeft = self[0, startPersentage]
         let trainDatasetItemsRight = self[endPersentage, 1]
         let testDatasetItems = self[startPersentage, endPersentage]
